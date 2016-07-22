@@ -143,6 +143,23 @@ body{
     font-size: 20px!important;
 }
 
+.f-22{
+    font-size: 22px!important;
+}
+
+.f-24{
+    font-size: 24px!important;
+}
+
+.f-26{
+    font-size: 26px!important;
+}
+
+.f-28{
+    font-size: 28px!important;
+}
+
+
 
 .w-500{
     font-weight: 500!important;
@@ -231,6 +248,11 @@ body{
     padding: 25px;
 }
 
+.team-box p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .black-strip{
     background: #58595b;
@@ -241,12 +263,32 @@ body{
 
 
 #about-section{
-    margin: 50px 0;
+    text-align: center;
+    font-size: 18px;
+
 }
+
+#about-section .container {
+    padding: 100px;
+}
+
+
 
 
 #work-section{
     margin: 50px 0;
+    text-align: center;
+}
+
+
+#work-section-sort .container{
+    padding: 20px 100px;
+}
+
+
+#fun-facts-section .container {
+    padding: 60px 80px ;
+
 }
 
 
@@ -347,6 +389,17 @@ body{
 
 .fun-box{
     text-align: center;
+    border-radius: 50%;
+    border: 1px solid #000;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    display: table;
+}
+
+.fun-box i{
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .h-logo{

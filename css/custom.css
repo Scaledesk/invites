@@ -17,6 +17,10 @@ body{
     background-color: #fdf9f3!important;
 }
 
+.custom-nav ul li a{
+    line-height: 50px!important;
+
+}
 
 
 /*////////CSS helpers classes*/
@@ -135,6 +139,10 @@ body{
     font-size: 16px!important;
 }
 
+.f-17{
+    font-size: 17px!important;
+}
+
 .f-18{
     font-size: 18px!important;
 }
@@ -163,6 +171,10 @@ body{
 
 .w-500{
     font-weight: 500!important;
+}
+
+.w-800{
+    font-weight: 800!important;
 }
 
 
@@ -352,7 +364,7 @@ body{
 }
 
 .social-icon li{
-    float: left;
+    display: inline-block;
     margin-right: 17px;
 }
 
@@ -391,10 +403,11 @@ body{
     text-align: center;
     border-radius: 50%;
     border: 1px solid #000;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     padding: 20px;
     display: table;
+    margin: 0 auto;
 }
 
 .fun-box i{
@@ -402,9 +415,6 @@ body{
     vertical-align: middle;
 }
 
-.h-logo{
-    margin-top: -15px;
-}
 
 
 
@@ -475,4 +485,28 @@ input[type="radio"][id="green"]:checked ~ .blue, input[type="radio"][id="green"]
 }
 .red img {
     margin: 10px;
+}
+
+
+#comment-section .container-fluid{
+    padding: 30px;
+}
+
+
+.join-us-bg{
+    background: url("https://images.unsplash.com/photo-1467070194793-fcca1d4876a9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=39ec1a12cc93546122d37a345632a68d") no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 450px;
+    background-size: cover;
+    background-position: 50% 50%;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.join-us-bg div{
+    color: #fff;
+
 }

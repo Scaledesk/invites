@@ -15,12 +15,17 @@ body{
 
 .custom-nav{
     background-color: #fdf9f3!important;
+    opacity: .8;
+
 }
 
 .custom-nav ul li a{
     line-height: 50px!important;
+    color: #000!important;
+    font-size: 16px!important;
 
 }
+
 
 
 /*////////CSS helpers classes*/
@@ -89,6 +94,10 @@ body{
     margin-top: 40px!important;
 }
 
+.m-t-60{
+    margin-top: 60px!important;
+}
+
 /*////Ends here///*/
 
 
@@ -114,6 +123,9 @@ body{
     padding: 20px!important;
 }
 
+.p-t-50{
+    padding-top: 50px!important;
+}
 
 /*///ends here////*/
 
@@ -218,33 +230,22 @@ body{
 
 
 .img-section{
-    background: url('https://images.unsplash.com/photo-1420406676079-b8491f2d07c8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=9f3ef471c715a16afcb63919aed895fd');
+    background: url("../img/cover-bg.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
     min-height: 620px;
     background-size: cover;
+    background-position: 80% 20%;
 }
-
-/*#image-section .img-section{*/
-    /*display: table;*/
-/*}*/
-
-
-
-/*#image-section .img-section h2{*/
-    /*display: table-cell;*/
-    /*vertical-align: middle;*/
-    /*text-align: center;*/
-/*}*/
 
 
 .meet-our-team-bg {
-    background: url("https://images.unsplash.com/photo-1468495244123-6c6c332eeece?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=36b4afd80d88234d4b6b4b0b348019e4");
+    background: linear-gradient(rgba(253, 253, 253, 0.47), rgba(255, 255, 255, 0.72)),url("../img/About-us.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
-    min-height: 520px;
+    min-height: 480px;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -252,18 +253,21 @@ body{
 }
 
 .team-box{
-    width: 350px;
-    height: 350px;
+    width: 26%;
     text-align: center;
-    background-color: #fff;
+    background-color: #58585b;
     border-radius: 50%;
     padding: 25px;
+    display: table;
 }
 
-.team-box p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+
+.team-txt{
+    display: table-cell;
+    vertical-align: middle;
+    color: #fff;
+
 }
 
 .black-strip{
@@ -416,76 +420,20 @@ body{
 }
 
 
-
-
-
-
-
-h1 {
-    text-align:center;
+.service-box{
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #000;
+    width: 90%;
+    height: 150px;
+    padding: 20px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
 }
 
-input[type="radio"] {
-    display:none;
-}
-label {
-    width:23%;
-    float:left;
-    text-align:center;
-    color:#222222;
-    margin:0.5%;
-    margin-bottom:30px;
-    cursor:pointer;
-    font-size: 18px;
-}
-/*input[type="radio"][id="blue"]:checked + label {*/
-    /*background:#6666ff;*/
-/*}*/
-input[type="radio"][id="blue"]:checked ~ .red, input[type="radio"][id="blue"]:checked ~ .green {
-    width:0;
-    height:0;
-    padding:0;
-    margin:0;
-    opacity:0;
-}
-/*input[type="radio"][id="red"]:checked + label {*/
-    /*background:#ff4466;*/
-/*}*/
-input[type="radio"][id="red"]:checked ~ .blue, input[type="radio"][id="red"]:checked ~ .green {
-    width:0;
-    height:0;
-    padding:0;
-    margin:0;
-    opacity:0;
-}
-/*input[type="radio"][id="green"]:checked + label {*/
-    /*background:#66dd99;*/
-/*}*/
-input[type="radio"][id="green"]:checked ~ .blue, input[type="radio"][id="green"]:checked ~ .red {
-    width:0;
-    height:0;
-    padding:0;
-    margin:0;
-    opacity:0;
-}
 
-.tile {
-    width:23%;
-    height:250px;
-    float:left;
-    transition:all 1s;
-    margin:0.5%;
-    padding:0.5%;
-}
-.green img{
-   margin: 10px;
-}
-.blue img {
-    margin: 10px;
-}
-.red img {
-    margin: 10px;
-}
 
 
 #comment-section .container-fluid{
@@ -494,10 +442,10 @@ input[type="radio"][id="green"]:checked ~ .blue, input[type="radio"][id="green"]
 
 
 .join-us-bg{
-    background: url("https://images.unsplash.com/photo-1467070194793-fcca1d4876a9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=39ec1a12cc93546122d37a345632a68d") no-repeat;
+    background: url("../img/Careers.jpg") no-repeat;
     background-attachment: fixed;
     width: 100%;
-    min-height: 450px;
+    min-height: 380px;
     background-size: cover;
     background-position: 50% 50%;
     display: -webkit-flex;
@@ -508,5 +456,149 @@ input[type="radio"][id="green"]:checked ~ .blue, input[type="radio"][id="green"]
 
 .join-us-bg div{
     color: #fff;
+
+}
+
+
+
+
+.button {
+    padding: 10px 18px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 7px;
+    color: #222;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.button:active,
+.button.is-checked {
+    padding: 10px!important;
+    border: 1px solid #999;
+    border-radius: 35px !Important;
+}
+
+
+
+/* ---- button-group ---- */
+
+.button-group:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.button-group .button {
+    margin-left: 0;
+    margin-right: 1px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+
+/* ---- isotope ---- */
+
+
+/* clear fix */
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ---- .element-item ---- */
+
+.element-item {
+    position: relative;
+    float: left;
+    margin: 5px;
+    padding: 10px;
+    color: #262524;
+}
+
+.element-item > * {
+    margin: 0;
+    padding: 0;
+}
+
+.element-item .name {
+    position: absolute;
+
+    left: 10px;
+    top: 60px;
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.element-item .symbol {
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+}
+
+.element-item .number {
+    position: absolute;
+    right: 8px;
+    top: 5px;
+}
+
+.element-item .weight {
+    position: absolute;
+    left: 10px;
+    top: 76px;
+    font-size: 12px;
+}
+
+
+.button{
+    background-color: transparent!important;
+    color: #000!important;
+    border: 1px solid transparent;
+    padding: 10px!important;
+}
+
+.button{
+    outline: none;
+}
+
+
+.button:hover{
+    background-color: transparent!important;
+    color: #000!important;
+    border-radius: 35px;
+    padding: 10px!important;
+    border: 1px solid #999;
+}
+
+
+.job-btn{
+    width: 250px;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.63);
+    border: 1px solid #eee;
+    font-size: 18px;
+}
+
+#footer-section{
+    background-color: #d1d2d4;
+    padding: 60px 0;
+}
+
+
+.footer-links {
+    padding-left: 0;
+}
+
+
+.footer-links li{
+    list-style-type: none;
+    margin-top: 5px;
 
 }

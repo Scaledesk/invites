@@ -12,7 +12,7 @@
 <body>
 <header>
     <nav class="navbar navbar-default navbar-fixed-top custom-nav">
-        <div class="container-fluid">
+        <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -21,7 +21,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img src="img/website-updated-logo.png" class="h-logo" alt="" width="200"></a>
+                <a class="navbar-brand custom-brand" href="#"><img src="img/invite-affairs-logo.png" class="h-logo" alt="" width="200"></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -54,10 +54,13 @@
     </div>
     <div class="meet-our-team-bg">
         <div class="team-box">
-            <p>With</p>
-            <p class="f-28">Quintessential</p>
-            <p class="f-28">Collection</p>
-            <p>Of royal cards that bask in finesse novelity and opulence and add that regal charm to your celebrations</p>
+            <div class="team-txt">
+                <p>With</p>
+                <h1>Quintessential</h1>
+                <h1>Collection</h1>
+                <p class="f-18">Of royal cards that bask in finesse novelity and opulence and add that regal charm to your celebrations</p>
+            </div>
+
         </div>
     </div>
 
@@ -76,7 +79,13 @@
 <section id="about-section">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 text-center">
+                <img src="img/invite-affairs-logo.png" alt="">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 m-t-60">
                 <p>Based in Delhi, noted for extraordinary cards and awe-inspiring personalized Stationary for the most valued clients at national and international level.</p>
                 <p class="m-t-40">We are Sought after by wedding planners, Celebrities, high profile socialites and those who look for the ultimate in invites and related stuff.</p>
             </div>
@@ -98,6 +107,76 @@
 
 
 
+<section id="services">
+    <div class="container">
+        <div class="row m-t-40">
+            <div class="col-md-12">
+                <p class="f-18 text-center m-b-40">Quality, exclusivity and diversity of services are the prime factors that set us apart. We draw inspiration from varied fields - arts, Entertainment, fashion, people, places, society and many more.</p>
+            </div>
+
+
+            <div class="row m-t-40">
+
+                <div class="col-md-2 col-md-offset-1">
+                    <div class="service-box">
+                        <img src="img/service-5.png" alt="" width="85">
+                    </div>
+                    <div class="f-20 text-center w-800">Weddings</div>
+                </div>
+
+
+                <div class="col-md-2">
+                    <div class="service-box">
+                        <img src="img/service-3.png" alt="" width="85">
+                    </div>
+
+                    <div class="f-20 text-center w-800">Events</div>
+                </div>
+
+
+                <div class="col-md-2">
+                    <div class="service-box">
+                        <img src="img/service-2.png" alt="" width="85">
+                    </div>
+                    <div class="f-20 text-center w-800">Party</div>
+
+                </div>
+
+
+                <div class="col-md-2">
+                    <div class="service-box">
+                        <img src="img/service-4.png" alt="" width="85">
+                    </div>
+
+                    <div class="f-20 text-center w-800">Inauguaration</div>
+
+                </div>
+
+                <div class="col-md-2">
+                    <div class="service-box">
+                        <img src="img/service-1.png" alt="" width="85">
+                    </div>
+
+                    <div class="f-20 text-center w-800">Special Ocassions</div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<div class="black-strip m-t-40">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="m-5">Our Masterpiece Creations</h1>
+        </div>
+    </div>
+</div>
 
 
 <section id="work-section-sort" class="m-t-40">
@@ -110,64 +189,45 @@
     </div>
     <div class="container-fluid">
         <div class="row">
+
             <div class="col-xs-12">
-                <input type="radio" id="blue" name="color" />
-                <label for="blue">Weddings</label>
-                <input type="radio" id="red" name="color"/>
-                <label for="red">Inauguration</label>
-                <input type="radio" id="green" name="color"/>
-                <label for="green">Party</label>
-                <input type="radio" id="reset" name="color"/>
-                <label for="reset">Anniversary</label>
-                <div class="tile blue">
-                    <img src="https://images.unsplash.com/photo-1459501462159-97d5bded1416?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=f857a0e14047ebf3ebc898aa8d5903a6"  width="250" height="200" alt="">
+
+                <div class="button-group filters-button-group text-center">
+                    <button class="button" data-filter=".metal">Weddings</button>
+                    <button class="button" data-filter=".transition">Inauguration</button>
+                    <button class="button" data-filter=".alkali, .alkaline-earth">Party</button>
+                    <button class="button" data-filter=":not(.transition)">Anniversary</button>
+
                 </div>
-                <div class="tile red">
-                    <img src="https://images.unsplash.com/photo-1416235150813-dcb31b0653e8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=16b345c059cd7de261751a475d5b6bce" width="250" height="200" alt="">
+
+                <div class="grid">
+                    <div class="element-item transition metal " data-category="transition">
+                        <img src="https://images.unsplash.com/photo-1459501462159-97d5bded1416?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=f857a0e14047ebf3ebc898aa8d5903a6"  width="250" height="200" alt="">
+                    </div>
+
+                    <div class="element-item metalloid " data-category="metalloid">
+                        <img src="https://images.unsplash.com/photo-1416235150813-dcb31b0653e8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=16b345c059cd7de261751a475d5b6bce" width="250" height="200" alt="">
+                    </div>
+
+                    <div class="element-item post-transition metal " data-category="post-transition">
+                        <img src="https://images.unsplash.com/photo-1416235150813-dcb31b0653e8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=16b345c059cd7de261751a475d5b6bce" width="250" height="200" alt="">
+                    </div>
+
+
+                    <div class="element-item post-transition metal " data-category="post-transition">
+                        <img src="img/isotopes/event-21072016.jpg"   width="250" height="200" alt="">-
+                    </div>
+
+
+                    <div class="element-item post-transition alkali alkaline-earth " data-category="post-transition">
+                        <img src="img/isotopes/Party.jpg"   width="250" height="200" alt="">-
+                    </div>
+
                 </div>
-                <div class="tile blue">
-                    <img src="https://images.unsplash.com/photo-1459501462159-97d5bded1416?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=f857a0e14047ebf3ebc898aa8d5903a6"   width="250" height="200" alt="">
-                </div>
-                <div class="tile green">
-                    <img src="https://images.unsplash.com/photo-1428992992979-aaeb02b6960c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=d5998e4f1bdb82805682ee368dc91b9b"  width="250" height="200" alt="">
-                </div>
-                <div class="tile blue">
-                    <img src="https://images.unsplash.com/photo-1459501462159-97d5bded1416?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=f857a0e14047ebf3ebc898aa8d5903a6"   width="250" height="200" alt="">
-                </div>
-                <div class="tile red">
-                    <img src="https://images.unsplash.com/photo-1416235150813-dcb31b0653e8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=16b345c059cd7de261751a475d5b6bce" width="250" height="200" alt="">
-                </div>
-                <div class="tile red">
-                    <img src="https://images.unsplash.com/photo-1416235150813-dcb31b0653e8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=16b345c059cd7de261751a475d5b6bce" width="250" height="200" alt="">
-                </div>
-                <div class="tile green">
-                    <img src="https://images.unsplash.com/photo-1428992992979-aaeb02b6960c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=d5998e4f1bdb82805682ee368dc91b9b"  width="250" height="200" alt="">
-                </div>
-                <div class="tile blue">
-                    <img src="https://images.unsplash.com/photo-1459501462159-97d5bded1416?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=f857a0e14047ebf3ebc898aa8d5903a6"  width="250" height="200" alt="">
-                </div>
-                <div class="tile green">
-                    <img src="https://images.unsplash.com/photo-1428992992979-aaeb02b6960c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=d5998e4f1bdb82805682ee368dc91b9b"  width="250" height="200" alt="">
-                </div>
-                <div class="tile red">
-                    <img src="https://images.unsplash.com/photo-1416235150813-dcb31b0653e8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=16b345c059cd7de261751a475d5b6bce" width="250" height="200" alt="">
-                </div>
-                <div class="tile green">
-                    <img src="https://images.unsplash.com/photo-1428992992979-aaeb02b6960c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=d5998e4f1bdb82805682ee368dc91b9b"  width="250" height="200" alt="">
-                </div>
-                <div class="tile blue">
-                    <img src="https://images.unsplash.com/photo-1459501462159-97d5bded1416?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=f857a0e14047ebf3ebc898aa8d5903a6"   width="250" height="200"alt="">
-                </div>
-                <div class="tile blue">
-                    <img src="https://images.unsplash.com/photo-1459501462159-97d5bded1416?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=f857a0e14047ebf3ebc898aa8d5903a6"  width="250" height="200" alt="">
-                </div>
-                <div class="tile green">
-                    <img src="https://images.unsplash.com/photo-1428992992979-aaeb02b6960c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=d5998e4f1bdb82805682ee368dc91b9b"  width="250" height="200" alt="">
-                </div>
-                <div class="tile red">
-                    <img src="https://images.unsplash.com/photo-1416235150813-dcb31b0653e8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=16b345c059cd7de261751a475d5b6bce"  width="250" height="200" alt="">
-                </div>
+
             </div>
+
+
         </div>
     </div>
 </section>
@@ -290,13 +350,13 @@
 
 
                 <div class="col-md-3">
-                        <div class="fun-box">
-                            <i class="fa fa-globe f-8" aria-hidden="true"></i>
-                        </div>
+                    <div class="fun-box">
+                        <i class="fa fa-globe f-8" aria-hidden="true"></i>
+                    </div>
 
-                            <div class="count text-center w-500">10&nbsp;<i class="fa fa-plus f-18" aria-hidden="true"></i>
-                            </div>
-                            <p class="text-center w-500">Countries</p>
+                    <div class="count text-center w-500">10&nbsp;<i class="fa fa-plus f-18" aria-hidden="true"></i>
+                    </div>
+                    <p class="text-center w-500">Countries</p>
                 </div>
             </div>
         </div>
@@ -314,7 +374,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <p class="f-18">
+                <p class="f-18 m-b-0">
                     I was So impressed by the beautiful cards and they were delivered within deadline. Exceeded my expectations!!!</p>
 
                 <p class="f-18 m-b-0">
@@ -322,7 +382,7 @@
                 </p>
 
 
-                <p class="f-20 w-800 m-b-0">
+                <p class="f-20 w-800 m-t-10 m-b-0">
                     Neeraj Mehra
                 </p>
 
@@ -335,7 +395,7 @@
                 </p>
 
 
-                <p class="f-20 w-800 m-b-0">
+                <p class="f-20 w-800 m-b-0 m-t-10">
                     Kapil Shukla
                 </p>
 
@@ -348,17 +408,41 @@
                 </p>
 
 
-                <p class="f-18">
-                    Thank you for all your help and great service. Best Regards
-
-                </p>
+                <p class="f-18">Thank you for all your help and great service. Best Regards</p>
 
 
-                <p class="f-20 w-800 m-b-0">
-                    Sanjay Kumar
-                </p>
-
+                <p class="f-20 w-800 m-b-0">Sanjay Kumar</p>
                 <p class="f-16">Dated: 09/06/2013</p>
+
+
+
+                <p class="f-18 m-b-0 m-t-40">
+                    Hello, I have received my wedding invitations and they are perfect. Exactly how I wanted them. Thank You all so much I am so happy with them  and will be recommending you to all my friends and family. Many Thanks
+                </p>
+
+
+
+                <p class="f-20 w-800 m-b-0 m-t-10">Miss Shilpi Kejriwal</p>
+                <p class="f-16 m-b-0">United Kingdom</p>
+
+                <p class="f-16">Dated: 23/03/2014</p>
+
+
+
+
+                <p class="f-18 m-b-0 m-t-40">We have received the wedding cards and they are very nice. Thank you for your help and patience in putting them together</p>
+
+
+
+                <p class="f-20 w-800 m-b-0 m-t-10">Ayaz khan</p>
+                <p class="f-16">Dated: 02/09/2014</p>
+
+
+
+                <p class="f-18 m-b-0 m-t-40">We want to say thank you again. We received the items perfectly I LOVE THEM</p>
+
+                <p class="f-20 w-800 m-b-0 m-t-10">Krishna & Karishma</p>
+                <p class="f-16">Dated: 21/05/2015</p>
 
 
 
@@ -415,7 +499,7 @@
     <div class="join-us-bg">
         <div class="text-center">
             <h3>Do you have what it takes to be part of the most idea driven team ?</h3>
-            <button class="btn btn-primary m-t-40">Find Job Opening</button>
+            <button class="job-btn">Find Job Opening</button>
         </div>
 
     </div>
@@ -511,19 +595,19 @@
 
 
 <section id="map-section" class=" m-t-40">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14023.61439073276!2d77.169975!3d28.512548!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x46c6263621809a82!2sSage+Designs+Pvt+Ltd.!5e0!3m2!1sen!2sin!4v1469088766681" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe style="pointer-events:none;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14023.61439073276!2d77.169975!3d28.512548!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x46c6263621809a82!2sSage+Designs+Pvt+Ltd.!5e0!3m2!1sen!2sin!4v1469088766681" width="100%" height="450" frameborder="0" allowfullscreen></iframe>
 </section>
 
 
 <section id="footer-section">
-    <div class="container-fluid m-t-40">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-3 text-center">
-                <img src="img/f-logo.png" alt="" width="250" class="m-b-20">
+                <img src="img/invite-affairs-logo.png" alt="" width="250" class="m-b-20">
             </div>
 
             <div class="col-md-3">
-                <h3 class="m-b-0">Subscribe</h3>
+                <h3 class="m-b-0 m-t-0">Subscribe</h3>
                 <p>Our newsletter</p>
                 <input type="text" placeholder="Your Email please" class="input-filed">
                 <a href="" class="input-btn"><i class="fa fa-arrow-right"></i></a>
@@ -531,7 +615,7 @@
 
 
             <div class="col-md-3">
-                <h3>Explore</h3>
+                <h3 class="m-t-0">Explore</h3>
                 <ul class="footer-links">
                     <li><a href="">Home</a></li>
                     <li><a href="">About us</a></li>
@@ -547,7 +631,7 @@
 
 
             <div class="col-md-3">
-                <div class="copyright m-t-40">
+                <div class="copyright">
                     <p class="f-17">Created by Saga Designs Pvt Ltd.</p>
                     <p class="f-16">&copy; 2016 invite affairs. All Right Reserved</p>
                 </div>
@@ -567,9 +651,50 @@
 
 
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/isotope/dist/isotope.pkgd.min.js"></script>
+
+
+
 <script>
+    // external js: isotope.pkgd.js
+
+    // init Isotope
+    var $grid = $('.grid').isotope({
+        itemSelector: '.element-item',
+        layoutMode: 'fitRows'
+    });
+    // filter functions
+    var filterFns = {
+        // show if number is greater than 50
+        numberGreaterThan50: function() {
+            var number = $(this).find('.number').text();
+            return parseInt( number, 10 ) > 50;
+        },
+        // show if name ends with -ium
+        ium: function() {
+            var name = $(this).find('.name').text();
+            return name.match( /ium$/ );
+        }
+    };
+    // bind filter button click
+    $('.filters-button-group').on( 'click', 'button', function() {
+        var filterValue = $( this ).attr('data-filter');
+        // use filterFn if matches value
+        filterValue = filterFns[ filterValue ] || filterValue;
+        $grid.isotope({ filter: filterValue });
+    });
+    // change is-checked class on buttons
+    $('.button-group').each( function( i, buttonGroup ) {
+        var $buttonGroup = $( buttonGroup );
+        $buttonGroup.on( 'click', 'button', function() {
+            $buttonGroup.find('.is-checked').removeClass('is-checked');
+            $( this ).addClass('is-checked');
+        });
+    });
 
 </script>
+
+
 <script>
     $(document).ready(function(){
         $("input[type ='text']").click(function(){
@@ -592,6 +717,10 @@
             }
         });
     });
+
+
+
+
 
 
 </script>

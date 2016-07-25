@@ -3,11 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Invites</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Robots (noindex,nofollow)">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/custom.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700,500' rel='stylesheet' type='text/css'>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <style>
+        nav ul{
+            z-index:1000;
+            -webkit-transition:.5s;
+            -moz-transition:.5s;
+            transition:.5s;
+        }
+        .custom-nav.active{
+            opacity: 1;
+            color:#fff;
+            -webkit-transition:.5s;
+            -moz-transition:.5s;
+            transition:.5s;
+        }
+
+
+    </style>
 </head>
 <body>
 <header>
@@ -716,6 +735,19 @@
                 $(this).text(Math.ceil(now));
             }
         });
+    });
+
+
+    $(window).scroll(function(event){
+
+        var yOffset = window.pageYOffset;
+        var breakpoint = 550;
+        if (yOffset > breakpoint){
+            $(".custom-nav").addClass('active');
+        }else{
+            $(".custom-nav").removeClass('active');
+        }
+
     });
 
 

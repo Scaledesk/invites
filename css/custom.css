@@ -10,8 +10,18 @@
 body{
     background-color: #fdf9f3;
     font-family: 'Raleway', sans-serif;
+    font-size: 100%;
 }
 
+/*h1 {*/
+    /*font-size: 5.9vw;*/
+/*}*/
+/*h2 {*/
+    /*font-size: 3.0vh;*/
+/*}*/
+/*p {*/
+    /*font-size: 2vmin;*/
+/*}*/
 
 .custom-nav{
     background-color: #fdf9f3!important;
@@ -253,7 +263,7 @@ body{
 }
 
 .team-box{
-    width: 26%;
+    width: 320px;
     text-align: center;
     background-color: #58585b;
     border-radius: 50%;
@@ -424,8 +434,8 @@ body{
     text-align: center;
     border-radius: 50%;
     border: 1px solid #000;
-    width: 90%;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     padding: 20px;
     display: flex;
     margin: 0 auto;
@@ -537,7 +547,7 @@ body{
 .element-item .symbol {
     position: absolute;
     left: 10px;
-    top: 0px;
+    top: 0;
     font-size: 42px;
     font-weight: bold;
     color: white;
@@ -601,4 +611,50 @@ body{
     list-style-type: none;
     margin-top: 5px;
 
+}
+
+
+@media screen and (max-width: 768px){
+    #work-section-sort .container{
+        padding: 10px;
+    }
+
+
+    #fun-facts-section .container {
+        padding: 10px;
+
+    }
+
+    #about-section .container {
+        padding: 10px;
+    }
+
+
+    #work-section-sort .container p{
+        /*text-align: justify;*/
+        font-size: 16px!important;
+    }
+
+
+    #fun-facts-section .container p{
+        /*text-align: justify;*/
+        font-size: 16px!important;
+
+
+    }
+
+    #about-section .container p{
+        /*text-align: justify;*/
+        font-size: 16px!important;
+
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    #fun-facts-section .container {
+        padding: 10px;
+
+    }
 }

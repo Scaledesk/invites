@@ -42,7 +42,7 @@ nav ul{
 
 }
 
-.custom-nav ul li a{
+.custom-nav ul li a, .custom-nav ul li p{
     line-height: 50px!important;
     color: #000!important;
     font-size: 16px!important;
@@ -242,7 +242,8 @@ nav ul{
     background-size: cover;
     display: -webkit-flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /*sanchit */
+    
 }
 
 .team-box{
@@ -253,6 +254,7 @@ nav ul{
     border-radius: 50%;
     padding: 40px;
     display: table;
+    margin-left: 130px;  /* sanchit */
 }
 
 
@@ -296,7 +298,7 @@ nav ul{
 
 
 #team-section{
-    margin: 50px 0;
+/*    margin: 50px 0;*/
     text-align: center;
 }
 
@@ -313,7 +315,7 @@ nav ul{
 
 #fun-facts-section .container p{
     line-height: 40px!important;
-    text-transform: uppercase;
+/*    text-transform: uppercase;*/
 
 }
 
@@ -439,8 +441,8 @@ nav ul{
     text-align: center;
     border-radius: 50%;
     border: 1px solid #000;
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     padding: 20px;
     display: flex;
     margin: 0 auto;
@@ -700,6 +702,15 @@ nav ul{
         height: 80px;
 
     }
+    
+/*
+    .meet-our-team-bg {
+    
+    justify-content: center; 
+    margin-left: 0px;  
+}
+*/
+    
 }
 
 
@@ -758,4 +769,8 @@ nav ul{
 
 .black-c{
     color: #000;
+}
+
+.text-uc{
+    text-transform: uppercase;
 }

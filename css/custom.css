@@ -19,6 +19,22 @@ body{
 }
 
 
+nav ul{
+    z-index:1000;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    transition:.5s;
+}
+.custom-nav.active{
+    opacity: 1;
+    color:#fff;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    transition:.5s;
+}
+
+
+
 
 .custom-nav{
     background-color: #fdf9f3!important;
@@ -62,17 +78,6 @@ body{
     margin: 10px!important;
 }
 
-.m-20{
-    margin: 20px!important;
-}
-
-.m-30{
-    margin: 30px!important;
-}
-
-.m-40{
-    margin: 40px!important;
-}
 
 .m-t-10{
     margin-top: 10px!important;
@@ -111,7 +116,7 @@ body{
 
 
 
-/*///Paddings//*/
+/*///Padding//*/
 
 .p-0{
     padding: 0!important;
@@ -126,13 +131,7 @@ body{
     padding: 10px!important;
 }
 
-.p-20{
-    padding: 20px!important;
-}
 
-.p-t-50{
-    padding-top: 50px!important;
-}
 
 /*///ends here////*/
 
@@ -141,17 +140,8 @@ body{
 
 /*////Fonts////*/
 
-.f-13{
-    font-size: 13px!important;
-}
 
-.f-14{
-    font-size: 14px!important;
-}
 
-.f-15{
-    font-size: 15px!important;
-}
 
 
 .f-16{
@@ -169,23 +159,6 @@ body{
 .f-20{
     font-size: 20px!important;
 }
-
-.f-22{
-    font-size: 22px!important;
-}
-
-.f-24{
-    font-size: 24px!important;
-}
-
-.f-26{
-    font-size: 26px!important;
-}
-
-.f-28{
-    font-size: 28px!important;
-}
-
 
 
 .w-500{
@@ -237,8 +210,7 @@ body{
 
 
 .img-section{
-    background: url("../img/cover-bg.jpg");
-    background-repeat: no-repeat;
+    background: url("../img/cover-bg.jpg") no-repeat;
     background-attachment: fixed;
     width: 100%;
     min-height: 620px;
@@ -248,13 +220,12 @@ body{
 
 
 .meet-our-team-bg {
-    background: linear-gradient(rgba(253, 253, 253, 0.47), rgba(255, 255, 255, 0.72)),url("../img/About-us.jpg");
-    background-repeat: no-repeat;
+    background: linear-gradient(rgba(253, 253, 253, 0.47), rgba(255, 255, 255, 0.72)),url("../img/About-us.jpg") no-repeat;
     background-attachment: fixed;
     width: 100%;
     min-height: 480px;
     background-size: cover;
-    display: flex;
+    display: -webkit-flex;
     align-items: center;
     justify-content: center;
 }
@@ -298,7 +269,7 @@ body{
 
 
 
-#work-section{
+#team-section{
     margin: 50px 0;
     text-align: center;
 }
@@ -361,10 +332,6 @@ body{
 .f-input-group > input#Message {
     height: 100px!important;
 
-}
-
-#googleMap{
-    width: 100%;
 }
 
 
@@ -460,8 +427,10 @@ body{
     background-size: cover;
     background-position: 50% 50%;
     display: -webkit-flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    -moz-justify-content: center;
+    -moz-align-items: center;
 }
 
 
@@ -536,7 +505,6 @@ body{
 
 .element-item .name {
     position: absolute;
-
     left: 10px;
     top: 60px;
     text-transform: none;
@@ -637,21 +605,18 @@ body{
     }
 
 
-    #work-section-sort .container p{
-        /*text-align: justify;*/
+    #team-section-sort .container p{
         font-size: 16px!important;
     }
 
 
     #fun-facts-section .container p{
-        /*text-align: justify;*/
         font-size: 16px!important;
 
 
     }
 
     #about-section .container p{
-        /*text-align: justify;*/
         font-size: 16px!important;
 
     }

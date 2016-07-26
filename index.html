@@ -10,23 +10,7 @@
     <link rel="stylesheet" href="css/custom.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700,500' rel='stylesheet' type='text/css'>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <style>
-        nav ul{
-            z-index:1000;
-            -webkit-transition:.5s;
-            -moz-transition:.5s;
-            transition:.5s;
-        }
-        .custom-nav.active{
-            opacity: 1;
-            color:#fff;
-            -webkit-transition:.5s;
-            -moz-transition:.5s;
-            transition:.5s;
-        }
 
-
-    </style>
 </head>
 <body>
 <header>
@@ -46,10 +30,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right ">
                     <li><a href="#">Home <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Works</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#about-section">About us</a></li>
+                    <li><a href="#services">Works</a></li>
+                    <li><a href="#team-section">Team</a></li>
+                    <li><a href="#contact-section">Contacts</a></li>
                 </ul>
             </div>
         </div>
@@ -265,7 +249,7 @@
 
 
 <!--Work section--->
-<section id="work-section">
+<section id="team-section">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -752,6 +736,9 @@
 
 
 
+        $('a[href^="#"]').click(function(event) {
+            $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+        });
 
 
 

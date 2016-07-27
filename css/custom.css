@@ -13,7 +13,7 @@ html{
 
 body{
     background-color: #fff;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Karma', serif;
     overflow-x: hidden;
 
 }
@@ -42,7 +42,7 @@ nav ul{
 
 }
 
-.custom-nav ul li a{
+.custom-nav ul li a, .custom-nav ul li p{
     line-height: 50px!important;
     color: #000!important;
     font-size: 16px!important;
@@ -242,19 +242,20 @@ nav ul{
     background-size: cover;
     display: -webkit-flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /*sanchit */
+
 }
 
 .team-box{
-    width: 400px;
-    height: 400px;
+    width: 320px;
+    height: 320px;
     text-align: center;
     background-color: #a99072;
     border-radius: 50%;
-    padding: 40px;
     display: table;
+    margin-left: 130px;
+    padding: 29px;  /* sanchit */
 }
-
 
 
 .team-txt{
@@ -264,14 +265,16 @@ nav ul{
 
 }
 
-.team-txt h1{
-    line-height: 60px;
-    margin: 0;
+.team-txt h1:nth-child(2){
+    line-height: 40px;
 }
 
+
+
 .team-txt p{
-    line-height: 40px;
     margin-top: 20px;
+    font-size: 18px !important;
+    letter-spacing: .2px;
 }
 
 .black-strip{
@@ -296,7 +299,7 @@ nav ul{
 
 
 #team-section{
-    margin: 50px 0;
+/*    margin: 50px 0;*/
     text-align: center;
 }
 
@@ -313,6 +316,7 @@ nav ul{
 
 #fun-facts-section .container p{
     line-height: 40px!important;
+/*    text-transform: uppercase;*/
 
 }
 
@@ -438,8 +442,8 @@ nav ul{
     text-align: center;
     border-radius: 50%;
     border: 1px solid #000;
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     padding: 20px;
     display: flex;
     margin: 0 auto;
@@ -684,10 +688,9 @@ nav ul{
     }
 
     .team-box{
-        width: 320px;
-        padding: 25px;
+        padding: 10px;
         line-height: 35px;
-        height: 320px;
+        margin: auto;
     }
 
     .custom-nav .navbar-collapse{
@@ -699,6 +702,24 @@ nav ul{
         height: 80px;
 
     }
+
+    .email{
+        float: none!important;
+    }
+
+    .email p{
+        float: none!important;
+    }
+
+    .address-phone{
+        float: none!important;
+
+    }
+
+    .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
+        margin-top: 80px!important;
+    }
+
 }
 
 
@@ -759,7 +780,73 @@ nav ul{
     color: #000;
 }
 
-
-.txt-uppercase{
+.text-uc{
     text-transform: uppercase;
+}
+
+
+
+.cd-top {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 40px;
+    right: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    background: rgba(255, 255, 255, .65) url(../img/cd-top-arrow.svg) no-repeat center 50%;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+    -moz-transition: opacity .3s 0s, visibility 0s .3s;
+    transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+    -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+    -moz-transition: opacity .3s 0s, visibility 0s 0s;
+    transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+.cd-top.cd-fade-out {
+    opacity: 1;
+}
+.no-touch .cd-top:hover {
+    background-color: #e86256;
+    opacity: 1;
+}
+@media only screen and (min-width: 768px) {
+    .cd-top {
+        right: 0;
+        bottom: 20px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .cd-top {
+        height: 60px;
+        width: 60px;
+        right: 0;
+        bottom: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+.carousel-caption{
+    left: 57%!important;
+    padding-bottom: 0px!important;
+    top: 28%!important;
+    font-size: 30px!important;
+    right: 50px;
+    text-align: right;
 }

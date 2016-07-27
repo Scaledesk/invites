@@ -313,7 +313,6 @@ nav ul{
 
 #fun-facts-section .container p{
     line-height: 40px!important;
-    text-transform: uppercase;
 
 }
 
@@ -758,4 +757,9 @@ nav ul{
 
 .black-c{
     color: #000;
+}
+
+
+.txt-uppercase{
+    text-transform: uppercase;
 }

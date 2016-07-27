@@ -851,3 +851,8 @@ nav ul{
 .scrolloff {
         pointer-events: none;
     }
+
+.fa-arrow-right:before{
+    color: #58595b;
+    vertical-align: middle;
+}

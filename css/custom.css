@@ -838,10 +838,6 @@ nav ul{
 
 
 
-
-
-
-
 .carousel-caption{
     left: 57%!important;
     padding-bottom: 0px!important;
@@ -850,3 +846,8 @@ nav ul{
     right: 50px;
     text-align: right;
 }
+
+
+.scrolloff {
+        pointer-events: none;
+    }

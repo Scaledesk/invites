@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Karma" rel="stylesheet">
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
-
+   
 </head>
 <body>
 <header>
@@ -655,7 +655,10 @@
             <div class="row">
                 <div class="col-md-12">
                     <h2 class="m-t-0">Say Hello!</h2>
-                    <form action="">
+
+                          <span id="successmsg" style='display:none'> Successfully send query</span> 
+                          <span id="errormsg" style='display:none'> Some error occurred</span> 
+                    <form>
                         <div class="row m-t-20">
                             <div class="col-md-4">
                                 <div class="f-input-group">
@@ -682,13 +685,16 @@
                                     <label class="float-label text-left" for="Message">Message</label>
                                     <input type="text" id="Message"  class="float-input" placeholder="Message">
                                 </div>
-                                <button class="btn btn-success pull-right"><i class="fa fa-envelope-o"></i>&nbsp;Send Message</button>
-                            </div>
+                                <button type="button" class="btn btn-success pull-right" onclick="submitForm(this)"><i class="fa fa-envelope-o"></i>&nbsp;Send Message <span id="loadingmessage" style='display:none'> <i class="fa fa-spinner fa-pulse fa-fw"></i></span></button>
+                            </div> 
+                                 
+
                         </div>
                     </form>
                 </div>
-            </div>
 
+            </div>
+                
             <div class="row">
                 <div class="col-md-12 text-center">
                     <ul class="social-icon">
@@ -793,6 +799,55 @@ filter: grayscale(100%);" id="map_canvas1" src="https://www.google.com/maps/embe
 <script>
     new WOW().init();
 </script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">
+ function submitForm(obj)
+              {
+                
+      $('#loadingmessage').show();          
+  
+
+               var name1=document.getElementById("name").value;
+                var mobile1=document.getElementById("mobile").value;
+                 var email1=document.getElementById("email").value;
+                  var Message1=document.getElementById("Message").value;
+                   
+             
+                  
+            
+
+                var dd ={'name':name1,'mobile':mobile1,'email':email1,'message':Message1};
+                /* alert(dd);*/
+                 /*console.log(dd);*/
+                /* alert(dd);*/
+                   $.ajax({
+                  'url' : "mail.php",
+                  'type' : 'POST',  //the way you want to send data to your URL
+                  dataType: "json",
+                  'data':dd,
+                  'success' : function(data){
+                    
+                   $('#loadingmessage').hide();
+
+                    if(data=="ok"){
+                                 $('#successmsg').show(0).delay(5000).hide(0);
+                              }else{
+                                $('#errormsg').show(0).delay(5000).hide(0); 
+                              }
+
+                   /* alert(data);*/
+                  
+                  },
+                   'error': function(data){
+                     
+                      alert('Some Error Occurred');
+                  }
+
+         });
+     }
+</script>
+
+
 
 
 </body>

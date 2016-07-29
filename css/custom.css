@@ -292,7 +292,7 @@ nav ul{
 }
 
 #about-section .container {
-    padding: 100px 200px;
+    padding: 120px 200px;
 }
 
 
@@ -855,4 +855,20 @@ nav ul{
 .fa-arrow-right:before{
     color: #58595b;
     vertical-align: middle;
+}
+
+.team-member:hover{
+    transform: scale(1.1);
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+
+}
+
+
+.team-member:hover img{
+    border: 2px solid  #0d3349;
+    transition: all .5s ease-in-out;
+    outline-offset: -9px;
+
+
 }

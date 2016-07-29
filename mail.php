@@ -29,8 +29,8 @@ $headers = "From:sudo@scaledesk.com\r\n";
 $headers = "Content-type: text/html;charset=iso-8859-1" . "\r\n";
       if(mail($emailadmin,$subject,$message,$headers))
  {
-         
-           if(mail($email,$subject,$messageUsers,$headers)){
+         echo json_encode("ok");
+          /* if(mail($email,$subject,$messageUsers,$headers)){
       	unset($headers,$message,$email,$name,$phone,$emailadmin,$subject);
       
        echo json_encode("ok");
@@ -39,7 +39,7 @@ $headers = "Content-type: text/html;charset=iso-8859-1" . "\r\n";
       			 unset($headers,$message,$email,$name,$phone,$emailadmin,$subject);
 	    
            echo json_encode("ok");
-                 }
+                 }*/
        
        
   }

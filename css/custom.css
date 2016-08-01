@@ -230,14 +230,14 @@ nav ul{
 
 
 
-.img-section{
-    background: url("../img/cover-bg.jpg") no-repeat;
-    background-attachment: fixed;
-    width: 100%;
-    min-height: 620px;
-    background-size: cover;
-    background-position: 80% 20%;
-}
+/*.img-section{*/
+    /*background: url('../img/cover-bg.jpg') no-repeat;*/
+    /*background-attachment: fixed;*/
+    /*width: 100%;*/
+    /*min-height: 620px;*/
+    /*background-size: cover;*/
+    /*background-position: 80% 20%;*/
+/*}*/
 
 
 .meet-our-team-bg {
@@ -280,7 +280,7 @@ nav ul{
 .team-txt p{
     margin-top: 20px;
     font-size: 18px !important;
-    letter-spacing: .2px;
+    letter-spacing: 0.2px;
 }
 
 .black-strip{
@@ -723,7 +723,7 @@ nav ul{
 
     .custom-nav .navbar-collapse{
         opacity: 1;
-        background: rgb(248, 239, 230);
+        background-color: #fdf9f3;
     }
 
     .custom-nav{
@@ -747,6 +747,27 @@ nav ul{
     .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
         margin-top: 80px!important;
     }
+
+    .testi-comment{
+        height: 400px!important;
+    }
+
+    /*#testi-section{*/
+        /*height: 500px!important;*/
+    /*}*/
+
+    #testi-section .container{
+        padding: 10px!important;
+    }
+
+    .team-txt p{
+        margin-top: 20px;
+        font-size: 15px !important;
+        letter-spacing: .2px;
+    }
+
+
+
 
 }
 
@@ -866,14 +887,14 @@ nav ul{
 
 
 
-.carousel-caption{
-    left: 57%!important;
-    padding-bottom: 0px!important;
-    top: 28%!important;
-    font-size: 30px!important;
-    right: 50px;
-    text-align: right;
-}
+/*.carousel-caption{*/
+    /*left: 57%!important;*/
+    /*padding-bottom: 0px!important;*/
+    /*top: 28%!important;*/
+    /*font-size: 30px!important;*/
+    /*right: 50px;*/
+    /*text-align: right;*/
+/*}*/
 
 
 .scrolloff {
@@ -901,7 +922,7 @@ nav ul{
 }
 
 
-.service-box:hover ~ .service-box{
+.service-box:hover .service-box{
     color: #00004a;
     font-size: 30px;
 }
@@ -911,7 +932,7 @@ nav ul{
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
     text-decoration: underline;
-    color: #008000 !important;
+    color: #aa1b20 !important;
     font-size: 18px !important;
     text-shadow: .20px .20px .15px #337ab7;
     background: transparent;
@@ -924,7 +945,99 @@ nav ul{
 
 
 
+/*.carousel-indicators::before{*/
+    /*content: '';*/
+    /*position: absolute;*/
+    /*height: 1px;*/
+    /*left: 35%;*/
+    /*right: 0;*/
+    /*top: 50%;*/
+    /*margin-top: -3px;*/
+    /*background-color: rgba(255,255,255,0.3);*/
+    /*background: aliceblue;*/
+    /*width: 175px;*/
+/*}*/
 
+
+
+/*.carousel-indicators li {*/
+    /*display: inline-block;*/
+    /*width: 10px;*/
+    /*height: 10px;*/
+    /*margin-right: 30px;*/
+    /*text-indent: -999px;*/
+    /*cursor: pointer;*/
+    /*background-color: #000\9;*/
+    /*background-color: #f5f5f5;*/
+    /*border: 1px solid #fff;*/
+    /*border-radius: 10px;*/
+/*}*/
+
+/*.carousel-indicators .active {*/
+    /*width: 12px;*/
+    /*height: 12px;*/
+    /*margin-right: 30px;*/
+    /*background-color: #fff;*/
+/*}*/
+
+
+#testi-section p{
+    margin-bottom: 0!important;
+}
+
+
+
+#testi-section{
+    background: url('../img/testi-bg-2.png') no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    -webkit-filter: saturate(30%);
+    -moz-filter: saturate(30%);
+    filter: saturate(30%);
+
+
+
+}
+
+
+#testi-section .container{
+    padding: 50px 50px 0 50px;
+    color: #fff;
+}
+
+.testi-comment{
+    height: 160px;
+    overflow: hidden;
+}
+
+
+.testi-comment img{
+    border: 2px solid #fff;
+}
+
+
+@media screen and (min-width: 768px) {
+    .slider-indiactor {
+        bottom: -50px;
+        margin-bottom: 0;
+    }
+}
+
+
+@media screen and (min-width: 768px)  {
+    .carousel-caption{
+        left: 57%!important;
+        padding-bottom: 0px!important;
+        top: 28%!important;
+        font-size: 30px!important;
+        right: 50px;
+        text-align: right;
+    }
+
+}
 
 
 

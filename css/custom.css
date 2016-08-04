@@ -409,11 +409,11 @@ nav ul{
 }
 
 .social-icon li a .i:hover{
-    color: #517fa4;
+    color: #c13584;
 }
 
 .social-icon li a .r:hover{
-    color: #517fa4;
+    color: #f26522;
 }
 
 .social-icon li a .g:hover{
@@ -507,10 +507,13 @@ nav ul{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: all .5s ease-out;
 }
 
 .service-box:hover{
-    transform: scaleX(-1);
+    transform: scale(1.3) rotateY(180deg);
+
+
 }
 
 
@@ -1166,14 +1169,13 @@ nav ul{
     position: absolute;
 }
 
-.owl-item{
-    margin-right: 15px!important;
-}
-
 
 .owl-theme .owl-controls .owl-buttons div{
     padding: 10px 20px;
     background: #f5f5dc;
 }
 
-
+.job-btn:hover{
+    border: 2px solid #fff;
+    transition: all .4s;
+}

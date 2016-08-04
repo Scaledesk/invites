@@ -55,22 +55,7 @@ $(document).ready(function(){
 
 
 
-//Service Count numbers//
 
-$('.count + i').each(function () {
-    $(this).prop('Counter',0).animate({
-        Counter: $(this).text()
-    }, {
-        duration: 4000,
-        easing: 'swing',
-        step: function (now) {
-            $(this).text(Math.ceil(now));
-        }
-    });
-});
-
-
-//Ends here//
 
 
 
@@ -81,9 +66,9 @@ $(window).scroll(function(event){
     var yOffset = window.pageYOffset;
     var breakpoint = 550;
     if (yOffset > breakpoint){
-        $(".custom-nav").addClass('active');
+        $(".custom-nav").addClass('active ');
     }else{
-        $(".custom-nav").removeClass('active');
+        $(".custom-nav").removeClass('active ');
     }
 
 });

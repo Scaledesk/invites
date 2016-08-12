@@ -1,0 +1,270 @@
+%!Adobe-FontList 1.14
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MinionPro-Regular
+FamilyName:Minion Pro
+StyleName:Regular
+FullName:Minion Pro
+MenuName:Minion Pro
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\CDR\Sage Designs\web design brochure\fonts\fonts Folder\Document fonts\MinionPro-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:205608
+FileModTime:1171970338
+WeightClass:400
+WidthClass:5
+AngleClass:0
+DesignSize:110
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MyriadCAD
+FamilyName:Myriad CAD
+StyleName:Regular
+FullName:Myriad CAD
+MenuName:Myriad CAD
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\CDR\Sage Designs\web design brochure\fonts\fonts Folder\Document fonts\MyriadCAD.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:78276
+FileModTime:1348413216
+WeightClass:250
+WidthClass:6
+AngleClass:0
+DesignSize:100
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:MyriadLight
+FamilyName:MyriadLight
+StyleName:Normal
+FullName:MyriadLight
+MenuName:MyriadLight
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\CDR\Sage Designs\web design brochure\fonts\fonts Folder\Document fonts\MyriadLight.ttf
+DataFormat:sfntData
+FileLength:51116
+FileModTime:1270816536
+WeightClass:400
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MyriadPro-Cond
+FamilyName:Myriad Pro
+StyleName:Condensed
+FullName:Myriad Pro Condensed
+MenuName:Myriad Pro Cond
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\CDR\Sage Designs\web design brochure\fonts\fonts Folder\Document fonts\MyriadPro-Cond.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:98776
+FileModTime:1329288320
+WeightClass:400
+WidthClass:3
+AngleClass:0
+DesignSize:110
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MyriadPro-Regular
+FamilyName:Myriad Pro
+StyleName:Regular
+FullName:Myriad Pro
+MenuName:Myriad Pro
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\CDR\Sage Designs\web design brochure\fonts\fonts Folder\Document fonts\MyriadPro-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:101732
+FileModTime:1329288320
+WeightClass:400
+WidthClass:5
+AngleClass:0
+DesignSize:110
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Myriad-BoldItalic
+FamilyName:Myriad
+StyleName:Bold Italic
+FullName:Myriad Bold Italic
+MenuName:Myriad Roman
+StyleBits:3
+WritingScript:Roman
+OutlineFileName:D:\CDR\Sage Designs\web design brochure\fonts\fonts Folder\Document fonts\wmbi____.PFB
+DataFormat:Plain
+UsesStandardEncoding:yes
+isCFF:no
+FileLength:34581
+FileModTime:1332638116
+WeightClass:700
+WidthClass:5
+AngleClass:1
+DesignSize:-1
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:PFM
+FontName:Myriad-BoldItalic
+NumMMAxes:0
+OutlineFileName:D:\CDR\Sage Designs\web design brochure\fonts\fonts Folder\Document fonts\wmbi____.pfm
+FileLength:4115
+FileModTime:1332638116
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Myriad-Bold
+FamilyName:Myriad
+StyleName:Bold
+FullName:Myriad Bold
+MenuName:Myriad Roman
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:D:\CDR\Sage Designs\web design brochure\fonts\fonts Folder\Document fonts\wmb_____.PFB
+DataFormat:Plain
+UsesStandardEncoding:yes
+isCFF:no
+FileLength:34931
+FileModTime:1332638116
+WeightClass:700
+WidthClass:5
+AngleClass:0
+DesignSize:-1
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:PFM
+FontName:Myriad-Bold
+NumMMAxes:0
+OutlineFileName:D:\CDR\Sage Designs\web design brochure\fonts\fonts Folder\Document fonts\wmb_____.pfm
+FileLength:4073
+FileModTime:1332638116
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Myriad-Italic
+FamilyName:Myriad
+StyleName:Italic
+FullName:Myriad Italic
+MenuName:Myriad Roman
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:D:\CDR\Sage Designs\web design brochure\fonts\fonts Folder\Document fonts\wmi_____.PFB
+DataFormat:Plain
+UsesStandardEncoding:yes
+isCFF:no
+FileLength:33258
+FileModTime:1332638116
+WeightClass:400
+WidthClass:5
+AngleClass:1
+DesignSize:-1
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:PFM
+FontName:Myriad-Italic
+NumMMAxes:0
+OutlineFileName:D:\CDR\Sage Designs\web design brochure\fonts\fonts Folder\Document fonts\wmi_____.pfm
+FileLength:4207
+FileModTime:1332638116
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Myriad-Roman
+FamilyName:Myriad
+StyleName:Roman
+FullName:Myriad Roman
+MenuName:Myriad Roman
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\CDR\Sage Designs\web design brochure\fonts\fonts Folder\Document fonts\wmr_____.PFB
+DataFormat:Plain
+UsesStandardEncoding:yes
+isCFF:no
+FileLength:33563
+FileModTime:1332638116
+WeightClass:400
+WidthClass:5
+AngleClass:0
+DesignSize:-1
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:PFM
+FontName:Myriad-Roman
+NumMMAxes:0
+OutlineFileName:D:\CDR\Sage Designs\web design brochure\fonts\fonts Folder\Document fonts\wmr_____.pfm
+FileLength:4106
+FileModTime:1332638116
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Myriad-Tilt
+FamilyName:Myriad
+StyleName:Tilt
+FullName:Myriad Tilt
+MenuName:Myriad Tilt
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\CDR\Sage Designs\web design brochure\fonts\fonts Folder\Document fonts\wmtil___.PFB
+DataFormat:Plain
+UsesStandardEncoding:yes
+isCFF:no
+FileLength:37965
+FileModTime:959163820
+WeightClass:400
+WidthClass:5
+AngleClass:0
+DesignSize:-1
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:PFM
+FontName:Myriad-Tilt
+NumMMAxes:0
+OutlineFileName:D:\CDR\Sage Designs\web design brochure\fonts\fonts Folder\Document fonts\wmtil___.pfm
+FileLength:4044
+FileModTime:959163820
+%EndFont
+

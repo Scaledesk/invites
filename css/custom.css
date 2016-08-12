@@ -51,7 +51,9 @@ nav ul{
 
 }
 
-
+.h-logo{
+    width: 200px;
+}
 
 /*////////CSS helpers classes*/
 
@@ -244,44 +246,6 @@ nav ul{
 /*//////ens here/////*/
 
 
-/*.team-box{*/
-    /*width: 320px;*/
-    /*height: 320px;*/
-    /*text-align: center;*/
-    /*background-color: #a99072;*/
-    /*border-radius: 50%;*/
-    /*display: table;*/
-    /*margin-left: 130px;*/
-    /*padding: 29px;  !* sanchit *!*/
-/*}*/
-
-
-/*.team-txt{*/
-    /*display: table-cell;*/
-    /*vertical-align: middle;*/
-    /*color: #fff;*/
-
-/*}*/
-
-/*.team-txt h1:nth-child(2){*/
-    /*line-height: 40px;*/
-/*}*/
-
-
-
-/*.team-txt p{*/
-    /*margin-top: 20px;*/
-    /*font-size: 18px !important;*/
-    /*letter-spacing: 0.2px;*/
-/*}*/
-
-/*.black-strip{*/
-    /*background: #a99072;*/
-    /*text-align: -webkit-center;*/
-    /*padding: 10px;*/
-    /*color: #fff;*/
-/*}*/
-
 
 #about-section{
     text-align: center;
@@ -322,9 +286,6 @@ nav ul{
     padding: 20px 60px;
 }
 
-#work-section-sort .container:last-child{
-    padding: 0 208px;
-}
 
 
 #fun-facts-section{
@@ -398,6 +359,10 @@ nav ul{
     height: 100px!important;
 
 }
+
+
+
+/*///////////////// Social icons //////////////*/
 
 
 .social-icon{
@@ -498,6 +463,9 @@ nav ul{
 }
 
 
+
+
+/*//////////////////////////////// Ends here///////////////////////////*/
 
 
 .input-filed {
@@ -857,7 +825,9 @@ nav ul{
 
 
 #map_canvas1{
-    border: 10px solid #cbe7d3;
+    border-top: 10px solid #cbe7d3;
+    border-bottom: 10px solid #cbe7d3;
+
 }
 
 
@@ -912,17 +882,6 @@ nav ul{
     }
 }
 
-
-
-
-/*.carousel-caption{*/
-    /*left: 57%!important;*/
-    /*padding-bottom: 0px!important;*/
-    /*top: 28%!important;*/
-    /*font-size: 30px!important;*/
-    /*right: 50px;*/
-    /*text-align: right;*/
-/*}*/
 
 
 .scrolloff {
@@ -1040,52 +999,7 @@ nav ul{
 
 
 
-
-
-/*loader*/
-
-.spinner {
-    width: 40px;
-    height: 40px;
-    position: relative;
-    margin: 100px auto;
-}
-
-.double-bounce1, .double-bounce2 {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-color: #333;
-    opacity: 0.6;
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
-    animation: sk-bounce 2.0s infinite ease-in-out;
-}
-
-.double-bounce2 {
-    -webkit-animation-delay: -1.0s;
-    animation-delay: -1.0s;
-}
-
-@-webkit-keyframes sk-bounce {
-    0%, 100% { -webkit-transform: scale(0.0) }
-    50% { -webkit-transform: scale(1.0) }
-}
-
-@keyframes sk-bounce {
-    0%, 100% {
-        transform: scale(0.0);
-        -webkit-transform: scale(0.0);
-    } 50% {
-          transform: scale(1.0);
-          -webkit-transform: scale(1.0);
-      }
-}
-
-
+/*///////////////////////////////////////////Owl Starts here///////////////////////////////*/
 
 
 
@@ -1129,8 +1043,18 @@ nav ul{
 
 .owl-theme .owl-controls .owl-buttons div{
     padding: 10px 20px;
-    background: #f5f5dc;
+    background: #a9a6c0;
 }
+
+
+
+.owl-item{
+    width: 260px!important;
+}
+
+
+/*//////////////////////////////////////////Owl ends here////////////////////////////////////////*/
+
 
 .job-btn:hover{
     border: 2px solid #fff;
@@ -1138,7 +1062,7 @@ nav ul{
 }
 
 
-
+/*/////////////////////////////////////////Loader start here/////////////////////////////////////*/
 
 
 #loader-wrapper .loader-section {
@@ -1317,8 +1241,25 @@ h1 {
 
 
 
+/*///////////////////////////////////////////////Ends here////////////////////////////////////////*/
 
 
 
 
 
+/*//////////////////////////////////////Navbar shrink on scroll///////////////////////////////////*/
+
+nav.navbar.shrink .navbar-brand {
+    font-size: 25px;
+}
+nav.navbar.shrink a {
+    line-height: 20px!important;
+    transition: all .4s ease;
+}
+nav.navbar.shrink .navbar-toggle {
+    margin: 8px 15px 8px 0;
+    padding: 4px 5px;
+}
+
+
+/*/////////////////////////////////////////Ends here//////////////////////////////////////////////*/

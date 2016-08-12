@@ -78,12 +78,6 @@ $(window).scroll(function(event){
 
 
 
-
-
-
-
-
-
 //Back to top button//
 
 
@@ -129,3 +123,12 @@ $back_to_top.on('click', function(event){
 
 
 //Ends here//
+
+
+$(window).scroll(function() {
+    if ($(document).scrollTop() > 50) {
+        $('nav').addClass('shrink');
+    } else {
+        $('nav').removeClass('shrink');
+    }
+});

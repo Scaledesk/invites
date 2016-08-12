@@ -3,6 +3,9 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    /*font-family: Custom-font1 , sans-serif;*/
+    /*font-weight: bold;*/
+
 }
 
 
@@ -11,14 +14,35 @@ html{
 }
 
 
+@font-face{
+    font-family: Custom-font;
+    src: url(../Document-fonts/MinionPro-Regular.otf);
+
+}
+
+
+@font-face{
+    font-family: Custom-font1;
+    src: url(../Document-fonts/MyriadCAD.otf);
+
+}
+
+@font-face{
+    font-family: Custom-font2;
+    src: url(../Document-fonts/MyriadLight.ttf);
+
+}
+
+
 body{
     background-color: #fff;
-    font-family: 'Karma', serif;
+    font-family: Custom-font ,sans-serif;
     overflow-x: hidden;
     position: relative;
 
 
 }
+
 
 
 nav ul{
@@ -82,6 +106,9 @@ nav ul{
     margin: 10px!important;
 }
 
+.m-t-5{
+    margin-top: 5px!important;
+}
 
 .m-t-10{
     margin-top: 10px!important;
@@ -477,7 +504,7 @@ nav ul{
 
 
 .input-filed {
-    width: 95%!important;
+    width: 70%!important;
     padding: 10px 18px;
 
 }
@@ -570,7 +597,11 @@ nav ul{
     background: url('../img/footer-bg.jpg');
     width: 100%;
     background-size: cover;
-    height: 320px;
+    height: 350px;
+}
+
+#footer-section .container-fluid{
+    padding: 100px 10px 10px;
 }
 
 
@@ -602,6 +633,13 @@ nav ul{
     #work-section-sort .container{
         padding: 10px;
     }
+
+    #about-section ,#testi-section,.join-us-bg ,#Event-calendar,#contact-section,#process ,#work-section-sort{
+        height: 100%!important;
+        padding: 10px!important;
+    }
+
+
 
 
     #process .container {
@@ -701,6 +739,71 @@ nav ul{
         margin-top: 20px;
         font-size: 15px !important;
         letter-spacing: .2px;
+    }
+
+    #services{
+        height: 100%!important;
+    }
+
+    .about-us-text img{
+        margin: 0!important;
+    }
+
+    .about-us-text h3, img{
+        text-align: center!important;
+    }
+
+    #about-section{
+        text-align: center!important;
+    }
+
+    #about-section .container-fluid{
+        padding: 10px!important;
+    }
+
+    .about-us-text .col-md-6{
+        text-align: center!important;
+    }
+
+    #team-section .container{
+        padding: 10px!important;
+    }
+
+    #work-section-sort p{
+        padding: 0!important;
+    }
+
+    #services .container h1 {
+        line-height: 40px;
+        color: #fff;
+    }
+
+    #services .container p {
+        color: #fff;
+    }
+
+
+    #process .fun-txt {
+        width: 100%;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .copyright{
+        text-align: center;
+    }
+
+    #footer-section .col-md-4{
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    #footer-section .container-fluid{
+        padding: 10px;
+    }
+
+    #testi-section{
+        background: url('../img/testti-bg-mobile.jpg')!important;
     }
 
 
@@ -1270,3 +1373,29 @@ nav.navbar.shrink .navbar-toggle {
 
 
 /*/////////////////////////////////////////Ends here//////////////////////////////////////////////*/
+
+
+
+
+.title{
+    font-family: Custom-font1 , sans-serif;
+    font-size: 36px;
+}
+
+h2{
+    font-family: Custom-font1 , sans-serif;
+
+}
+
+.copyright-section{
+    padding: 10px;
+}
+
+
+.copyright-section a{
+    color: #7a7879;
+}
+
+.copyright-section p a{
+    margin: 0 10px;
+}

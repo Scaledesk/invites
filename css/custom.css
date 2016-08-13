@@ -36,7 +36,8 @@ html{
 
 body{
     background-color: #fff;
-    font-family: Custom-font ,sans-serif;
+    /*font-family: Custom-font ,sans-serif;*/
+    font-family: 'Muli', sans-serif;
     overflow-x: hidden;
     position: relative;
 
@@ -803,7 +804,12 @@ nav ul{
     }
 
     #testi-section{
-        background: url('../img/testti-bg-mobile.jpg')!important;
+        background: none!important;
+
+    }
+    #testi-section .carousel{
+        margin-top: 0!important;
+        margin-bottom: 40px!important;
     }
 
 
@@ -848,7 +854,7 @@ nav ul{
     background: url('../img/contact-us-bg.jpg');
     width: 100%;
     background-size: cover;
-    height: 600px;
+    height: 640px;
 }
 
 
@@ -995,8 +1001,8 @@ nav ul{
 
 
 .scrolloff {
-        pointer-events: none;
-    }
+    pointer-events: none;
+}
 
 .fa-arrow-right:before{
     color: #58595b;
@@ -1132,9 +1138,9 @@ nav ul{
 }
 
 
-  .owl-theme .owl-controls .owl-buttons img {
-      position: absolute;
-  }
+.owl-theme .owl-controls .owl-buttons img {
+    position: absolute;
+}
 
 .owl-theme .owl-controls .owl-buttons .owl-prev{
     left: -69px;

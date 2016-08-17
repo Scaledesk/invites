@@ -108,6 +108,10 @@ $back_to_top.on('click', function(event){
     );
 });
 
+
+
+
+
 // you want to enable the pointer events only on click;
 
         $('#map_canvas1').addClass('scrolloff'); // set the pointer events to none on doc ready
@@ -123,6 +127,9 @@ $back_to_top.on('click', function(event){
 
 
 //Ends here//
+
+
+
 
 
 $(window).scroll(function() {

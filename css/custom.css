@@ -1,9 +1,4 @@
 
-*{
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
 
 
 html{
@@ -667,192 +662,6 @@ nav ul{
 }
 
 
-@media screen and (max-width: 768px){
-    #work-section-sort .container{
-        padding: 10px;
-    }
-
-    #about-section ,#testi-section,.join-us-bg ,#Event-calendar,#contact-section,#process ,#work-section-sort{
-        height: 100%!important;
-        padding: 10px!important;
-    }
-
-
-
-
-    #process .container {
-        padding: 10px;
-
-    }
-
-    #about-section .container {
-        padding: 10px;
-    }
-
-
-    #team-section-sort .container p{
-        font-size: 16px!important;
-    }
-
-
-    #process .container p{
-        font-size: 16px!important;
-
-
-    }
-
-    #about-section .container p{
-        font-size: 16px!important;
-
-    }
-
-    h1{
-        font-size: 20px;
-    }
-
-    #process .container {
-        padding: 10px;
-
-    }
-
-    #services .container p{
-        padding: 10px!important;
-    }
-
-    #Event-calendar .container{
-        padding: 10px!important;
-    }
-
-    .join-us-bg h3{
-        padding: 10px!important;
-    }
-
-    .other-half-footer{
-        padding: 10px!important;
-    }
-
-    .team-box{
-        padding: 10px;
-        line-height: 35px;
-        margin: auto;
-    }
-
-    .custom-nav .navbar-collapse{
-        opacity: 1;
-        background-color: #fdf9f3;
-    }
-
-    .custom-nav{
-        height: 80px;
-
-    }
-
-    .email{
-        float: none!important;
-    }
-
-    .email p{
-        float: none!important;
-    }
-
-    .address-phone{
-        float: none!important;
-
-    }
-
-    .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
-        margin-top: 80px!important;
-    }
-
-    .testi-comment{
-        height: 400px!important;
-    }
-
-
-    #testi-section .container{
-        padding: 10px!important;
-    }
-
-    .team-txt p{
-        margin-top: 20px;
-        font-size: 15px !important;
-        letter-spacing: .2px;
-    }
-
-    #services{
-        height: 100%!important;
-    }
-
-    .about-us-text img{
-        margin: 0!important;
-    }
-
-    .about-us-text h3, img{
-        text-align: center!important;
-    }
-
-    #about-section{
-        text-align: center!important;
-    }
-
-    #about-section .container-fluid{
-        padding: 10px!important;
-    }
-
-    .about-us-text .col-md-6{
-        text-align: center!important;
-    }
-
-    #team-section .container{
-        padding: 10px!important;
-    }
-
-    #work-section-sort p{
-        padding: 0!important;
-    }
-
-    #services .container h1 {
-        line-height: 40px;
-        color: #fff;
-    }
-
-    #services .container p {
-        color: #fff;
-    }
-
-
-    #process .fun-txt {
-        width: 100%;
-        margin-top: 0;
-        margin-left: 0;
-    }
-
-    .copyright{
-        text-align: center;
-    }
-
-    #footer-section .col-md-4{
-        text-align: center;
-        margin: 20px 0;
-    }
-
-    #footer-section .container-fluid{
-        padding: 10px;
-    }
-
-    #testi-section{
-        background: none!important;
-
-    }
-    #testi-section .carousel{
-        margin-top: 0!important;
-        margin-bottom: 40px!important;
-    }
-
-
-
-
-}
 
 
 
@@ -922,17 +731,17 @@ nav ul{
 
 #services{
     background: url('../img/services.jpg') no-repeat center;
-    height: 680px;
+    height: 650px;
     width: 100%;
     background-size: cover;
     background-position: 100%;
 }
 
 
-#services .container h1{
-    padding-top: 150px;
-    line-height: 40px
+#services .container .row:last-child{
+    margin-top: 90px;
 }
+
 
 
 #services .container p{
@@ -1111,7 +920,7 @@ nav ul{
 }
 
 .testi-comment{
-    height: 160px;
+    height: 165px;
     overflow: hidden;
 }
 
@@ -1424,12 +1233,13 @@ nav.navbar.shrink .navbar-toggle {
 
 h2{
     font-family: Custom-font1 , sans-serif;
-    letter-spacing: -4px;
+    letter-spacing: -2px;
+    word-spacing: -4px;
 
 }
 
 .f-MyriadCAD{
-    font-family: Custom-font1 , 'PT Sans';
+    font-family: Custom-font1 , 'PT Sans' ,sans-serif;
     letter-spacing: -1px;
 }
 
@@ -1453,4 +1263,286 @@ h2{
 
 #services h1{
     letter-spacing: -4px;
+}
+
+
+
+
+/*/////////////////////////////////////////Media Query///////////////////////////////////////*/
+
+
+
+@media screen and (max-width: 768px){
+    #work-section-sort .container{
+        padding: 10px;
+    }
+
+    #about-section ,#testi-section,.join-us-bg ,#Event-calendar,#contact-section,#process ,#work-section-sort{
+        height: 100%!important;
+        padding: 10px!important;
+    }
+
+
+
+
+    #process .container {
+        padding: 10px;
+
+    }
+
+    #about-section .container {
+        padding: 10px;
+    }
+
+
+    #team-section-sort .container p{
+        font-size: 16px!important;
+    }
+
+
+    #process .container p{
+        font-size: 16px!important;
+
+
+    }
+
+    #about-section .container p{
+        font-size: 16px!important;
+
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    #process .container {
+        padding: 10px;
+
+    }
+
+    #services .container p{
+        padding: 10px!important;
+    }
+
+    #Event-calendar .container{
+        padding: 10px!important;
+    }
+
+    .join-us-bg h3{
+        padding: 10px!important;
+    }
+
+    .other-half-footer{
+        padding: 10px!important;
+    }
+
+    .team-box{
+        padding: 10px;
+        line-height: 35px;
+        margin: auto;
+    }
+
+    .custom-nav .navbar-collapse{
+        opacity: 1;
+        background-color: #fdf9f3;
+    }
+
+    .custom-nav{
+        height: 80px;
+
+    }
+
+    .email{
+        float: none!important;
+    }
+
+    .email p{
+        float: none!important;
+        text-align: left;
+    }
+
+    .address-phone{
+        float: none!important;
+
+    }
+
+    .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
+        margin-top: 80px!important;
+    }
+
+    .testi-comment{
+        height: 100%
+    }
+
+
+    #testi-section .container{
+        padding: 10px!important;
+    }
+
+    .team-txt p{
+        margin-top: 20px;
+        font-size: 15px !important;
+        letter-spacing: .2px;
+    }
+
+    #services{
+        height: 100%!important;
+    }
+
+    .about-us-text img{
+        margin: 0!important;
+        width: 250px;
+    }
+
+    .about-us-text h3, img{
+        text-align: center!important;
+        font-size: 20px;
+    }
+
+    #about-section{
+        text-align: center!important;
+    }
+
+    #about-section .container-fluid{
+        padding: 10px!important;
+    }
+
+    .about-us-text .col-md-6{
+        text-align: center!important;
+    }
+
+    #team-section .container{
+        padding: 10px!important;
+    }
+
+
+
+    #services .container h1 {
+        line-height: 40px;
+        color: #fff;
+    }
+
+    #services .container p {
+        color: #fff;
+    }
+
+
+    #process .fun-txt {
+        width: 100%;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .copyright{
+        text-align: center;
+    }
+
+    #footer-section .col-md-4{
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    #footer-section .container-fluid{
+        padding: 10px;
+    }
+
+    #testi-section{
+        background: none!important;
+
+    }
+    #testi-section .carousel{
+        margin-top: 0!important;
+        margin-bottom: 40px!important;
+    }
+
+
+
+    #work-section-sort .container:first-child{
+        padding:  0
+    }
+
+
+    #work-section-sort .container:last-child{
+        padding: 0;
+
+    }
+
+
+    #work-section-sort .container .title{
+        font-size: 25px;
+    }
+
+    #work-section-sort .container p{
+        font-size: 17px;
+        padding: 0!important;
+    }
+
+    #process .fun-txt .col-md-2{
+        margin: 0!important;
+    }
+
+    #join-us-section h3{
+        margin: 0;
+    }
+
+    .h-logo{
+        width: 148px;
+    }
+
+
+
+    /*/////Custom nav  active class/////*/
+
+
+    .custom-nav ul li a, .custom-nav ul li p {
+        font-size: 11px!important;
+    }
+
+
+    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+        color: #901518 !important;
+        font-size: 11px !important;
+        background: beige;
+    }
+
+
+    .nav>li>a {
+        position: relative;
+        display: block;
+        padding: 10px 10px;
+    }
+
+    .custom-nav {
+        height: 51px;
+    }
+
+    nav.navbar.shrink a {
+        line-height: 30px!important;
+        transition: all .4s ease;
+    }
+
+    /*///Ends here///*/
+
+    .title{
+        font-size: 30px;
+    }
+
+    h2{
+        letter-spacing: -1px;
+        font-size: 25px;
+    }
+
+    h4{
+        font-size: 15px;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+
+
+
+
+
 }

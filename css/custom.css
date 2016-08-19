@@ -3,6 +3,7 @@
 
 html{
     overflow-x: hidden;
+    -webkit-overflow-scrolling: touch
 }
 
 
@@ -593,6 +594,8 @@ nav ul{
     -webkit-align-items: center;
     -moz-align-items: center;
         align-items: center;
+    background-origin: inherit;
+    object-fit: cover;
 }
 
 
@@ -1473,7 +1476,7 @@ h2{
     }
 
     #work-section-sort .container p{
-        font-size: 17px;
+        font-size: 17px!important;
         padding: 0!important;
     }
 

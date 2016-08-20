@@ -1526,12 +1526,14 @@ h2{
 
     .title{
         font-size: 30px;
+        margin: 10px 0;
     }
 
     h1{
-        font-size: 20px;
-        word-spacing: -5px;
+        font-size: 25px;
+        word-spacing: -12px;
         letter-spacing: 1px!important;
+        text-align: center;
     }
 
     h2{

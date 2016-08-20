@@ -280,10 +280,9 @@ nav ul{
 #about-section{
     text-align: center;
     font-size: 18px;
-    background: url('../img/About-us.jpg') center no-repeat;
+    background: #bbe7d8 url('../img/About-us.jpg') center no-repeat;
     background-size: cover;
     height: 700px;
-
 
 }
 
@@ -734,7 +733,7 @@ nav ul{
 }
 
 #services{
-    background: url('../img/services.jpg') no-repeat center;
+    background: #ded4df url('../img/services.jpg') no-repeat center;
     height: 650px;
     width: 100%;
     background-size: cover;
@@ -1266,7 +1265,7 @@ h2{
 }
 
 #services h1{
-    letter-spacing: -4px;
+    letter-spacing: -2px;
 }
 
 
@@ -1391,6 +1390,7 @@ h2{
 
     #services{
         height: 100%!important;
+        background: none;
     }
 
     .about-us-text img{
@@ -1427,7 +1427,7 @@ h2{
     }
 
     #services .container p {
-        color: #fff;
+        color: #565a5c;
     }
 
 
@@ -1542,6 +1542,10 @@ h2{
 
     h3{
         font-size: 20px;
+    }
+
+    #services .container .row:last-child{
+        margin-top: 20px;
     }
 
 

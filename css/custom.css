@@ -1370,8 +1370,8 @@ h2{
 
     }
 
-    .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
-        margin-top: 80px!important;
+    .carousel-inner>.item>a>img, .carousel-inner>.item>img, .thumbnail a>img, .thumbnail>img{
+        margin-top: 50px!important;
     }
 
     .testi-comment{
@@ -1549,6 +1549,6 @@ h2{
 
 
 
-
-
 }
+
+

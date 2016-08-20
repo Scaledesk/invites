@@ -78,15 +78,15 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right ">
-                    <li><a href="#platform-section" class="active">Platform </a></li>
-                    <li><a href="#progress" class="active">Progress</a></li>
-                    <li><a href="#services" class="active">Products</a></li>
-                    <li><a href="#work-section-sort" class="active">Portfolio</a></li>
-                    <li><a href="#team-section" class="active">People</a></li>
-                    <li><a href="#process" class="active">Process</a></li>
-                    <li><a href="#testi-section" class="active">Praise</a></li>
-                    <li><a href="#Event-calendar" class="active">Postings</a></li>
-                    <li><a href="#map-section" class="active">Place</a></li>
+                    <li><a data-toggle="collapse" href="#platform-section" class="active">Platform </a></li>
+                    <li><a data-toggle="collapse" href="#progress" class="active">Progress</a></li>
+                    <li><a data-toggle="collapse" href="#services" class="active">Products</a></li>
+                    <li><a data-toggle="collapse" href="#work-section-sort" class="active">Portfolio</a></li>
+                    <li><a data-toggle="collapse" href="#team-section" class="active">People</a></li>
+                    <li><a data-toggle="collapse" href="#process" class="active">Process</a></li>
+                    <li><a data-toggle="collapse"  href="#testi-section" class="active">Praise</a></li>
+                    <li><a data-toggle="collapse" href="#Event-calendar" class="active">Postings</a></li>
+                    <li><a data-toggle="collapse" href="#map-section" class="active">Place</a></li>
 
                 </ul>
             </div>
@@ -519,7 +519,7 @@
             <div class="testi-bg">
 
                 <div class="col-md-12">
-                    <h2 class="visible-xs visible-sm">What people Say</h2>
+                    <h2 class="visible-xs visible-sm text-center">What people Say</h2>
                     <div id="carousel-example-generic-1" class="carousel slide" data-ride="carousel">
                         <!-- Indicators -->
                         <ol class="carousel-indicators hidden-xs hidden-sm slider-indiactor">
@@ -975,6 +975,12 @@
     } else {
         $('.wow-removed').addClass('wow').removeClass('wow-removed');
     }
+
+
+    $('.navbar-collapse a').click(function (e) {
+        $('.navbar-collapse').collapse('toggle');
+    });
+
 
 
 

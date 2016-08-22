@@ -1303,6 +1303,12 @@ h2{
 }
 
 
+.carousel-inner>.item>a>img, .carousel-inner>.item>img::before{
+    background: rgba(17, 17, 17, 0.38);
+
+
+}
+
 
 
 /*/////////////////////////////////////////Media Query///////////////////////////////////////*/
@@ -1340,8 +1346,9 @@ h2{
     #process .container p{
         font-size: 16px!important;
 
-
     }
+
+
 
     #about-section .container p{
         font-size: 16px!important;
@@ -1355,7 +1362,7 @@ h2{
     }
 
     #services .container p{
-        padding: 10px!important;
+        padding: 0;
     }
 
     #Event-calendar .container{
@@ -1425,7 +1432,7 @@ h2{
         width: 250px;
     }
 
-    .about-us-text h3, img{
+    .about-us-text h3{
         text-align: center!important;
         font-size: 20px;
     }
@@ -1453,9 +1460,6 @@ h2{
         color: #fff;
     }
 
-    #services .container p {
-        color: #565a5c;
-    }
 
 
     #process .fun-txt {
@@ -1591,6 +1595,98 @@ h2{
 
     .custom-nav ul li a, .custom-nav ul li p{
         line-height: 30px;
+    }
+
+    p{
+        font-size: 16px!important;
+        color: #565a5c;
+    }
+
+
+    .about-us-text p{
+        word-spacing: 0;
+        line-height: 28px;
+        text-align: justify;
+        font-size: 16px !Important;
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    #services .container p {
+        line-height: 28px;
+        font-size: 16px !important;
+        text-align: justify;
+    }
+
+
+    #team-section figure figcaption{
+        transform: rotate(0deg);
+        margin-top: 20px!important;
+        text-align: center;
+    }
+
+    #team-section h2{
+        letter-spacing: -2px;
+        font-size: 20px;
+    }
+
+    #process .row{
+        margin-top: 0!important;
+    }
+
+    #process h2{
+        letter-spacing: -2px;
+        font-size: 20px;
+    }
+
+    .count{
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+
+    #Event-calendar h4{
+        margin-left: 30px;
+    }
+
+    .join-us-bg  h3{
+        font-size: 16px;
+    }
+
+    .join-us-bg  .title{
+        font-size: 20px;
+    }
+
+
+
+    #about-section ,#services ,#work-section-sort ,#team-section ,#process ,#testi-section ,#Event-calendar ,.join-us-bg{
+        background: none;
+    }
+
+    #about-section{
+        background-color: #bbe7d8;
+    }
+
+    #services{
+        background: #eeedf5;
+        background: linear-gradient(top left  , #eeedf5);
+    }
+
+    #team-section{
+        background-color: #b1d6df;
+    }
+
+
+    #process{
+        background-color: #dee8f1;
+    }
+
+    #Event-calendar{
+        background-color: #e2e1e9;
+    }
+
+    .join-us-bg{
+        background-color: #fee9ce;
     }
 
 

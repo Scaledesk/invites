@@ -8,21 +8,21 @@ html{
 
 
 @font-face{
-    font-family: Custom-font;
-    src: url(../Document-fonts/MinionPro-Regular.otf);
+    font-family: JosefinSans-Bold;
+    src: url(../josefin_sans/JosefinSans-Bold.ttf);
 
 }
 
 
 @font-face{
-    font-family: Custom-font1;
-    src: url(../Document-fonts/MyriadCAD.otf);
+    font-family: JosefinSans-Regular;
+    src: url(../josefin_sans/JosefinSans-Regular.ttf);
 
 }
 
 @font-face{
-    font-family: Custom-font2;
-    src: url(../Document-fonts/MyriadLight.ttf);
+    font-family: JosefinSans-Thin;
+    src: url(../josefin_sans/JosefinSans-Thin.ttf);
 
 }
 
@@ -39,8 +39,8 @@ body{
 
 img{
     image-rendering: auto;
-    image-rendering: crisp-edges;
-    image-rendering: pixelated;
+    /*image-rendering: crisp-edges;*/
+    /*image-rendering: pixelated;*/
 }
 
 
@@ -75,9 +75,15 @@ nav ul{
 
 }
 
+.custom-nav ul li a::first-letter{
+    color: #f73009 !important;
+}
+
 .h-logo{
     width: 200px;
 }
+
+
 
 /*////////CSS helpers classes*/
 
@@ -226,6 +232,10 @@ nav ul{
     font-size: 24px!important;
 }
 
+.f-29{
+    font-size: 29px!important;
+}
+
 
 .w-100{
     font-weight: 100!important;
@@ -244,6 +254,9 @@ nav ul{
 .f-8{
     font-size: 5em!important;
 }
+
+
+
 
 
 
@@ -291,7 +304,6 @@ nav ul{
     height: 700px;
     image-rendering: auto;
     image-rendering: crisp-edges;
-    image-rendering: pixelated;
 
 }
 
@@ -342,16 +354,25 @@ nav ul{
 }
 
 
-
 #process{
-    background: url('../img/fun-facts-section.jpg');
+    z-index: 0;
+    background: rgba(17, 17, 17, 0.1)!important;
+
+}
+
+#process::before{
+    z-index: -1;
+    content: "";
+    position: absolute;
+    display: block;
+    background: url('../img/fun-facts-section.jpg')!important;
     width: 100%;
-    background-size: cover;
+    background-size: cover!important;
     background-position: 100%;
     height: 630px;
     image-rendering: auto;
     image-rendering: crisp-edges;
-    image-rendering: pixelated;
+
 }
 
 
@@ -364,8 +385,6 @@ nav ul{
     margin-top: 140px;
     margin-left: 170px;
 }
-
-
 
 
 
@@ -535,7 +554,6 @@ nav ul{
 .input-filed {
     width: 70%!important;
     padding: 10px 18px;
-    border: 1px solid #999;
 
 }
 
@@ -551,16 +569,14 @@ nav ul{
     font-size: 30px;
     text-align: center;
     color: #c01f25;
-    font-family: Custom-font1 , sans-serif;
-    letter-spacing: -4px;
+    font-family: JosefinSans-Regular , sans-serif;
 }
 
 
 
 .count p{
     text-transform: uppercase;
-    font-family: Custom-font1 ,sans-serif;
-    letter-spacing: -1px;
+    font-family: JosefinSans-Regular ,sans-serif;
     font-size: 11px;
 }
 
@@ -568,7 +584,6 @@ nav ul{
 .service-box{
     text-align: center;
     border-radius: 50%;
-    border: 1px solid #000;
     width: 120px;
     height: 120px;
     padding: 20px;
@@ -611,7 +626,6 @@ nav ul{
     background-origin: inherit;
     image-rendering: auto;
     image-rendering: crisp-edges;
-    image-rendering: pixelated;
 }
 
 
@@ -652,7 +666,6 @@ nav ul{
     height: 338px;
     image-rendering: auto;
     image-rendering: crisp-edges;
-    image-rendering: pixelated;
 }
 
 #footer-section .container-fluid{
@@ -702,7 +715,6 @@ nav ul{
     padding-bottom: 40px;
     image-rendering: auto;
     image-rendering: crisp-edges;
-    image-rendering: pixelated;
 }
 
 #Event-calendar .container{
@@ -722,13 +734,13 @@ nav ul{
 }
 
 #contact-section{
-    background: url('../img/contact-us-bg.jpg');
+    /*background: url('../img/contact-us-bg.jpg');*/
     width: 100%;
     background-size: cover;
-    height: 700px;
+    /*height: 700px;*/
     image-rendering: auto;
     image-rendering: crisp-edges;
-    image-rendering: pixelated;
+    background: #f9f8f6;
 }
 
 
@@ -765,7 +777,6 @@ nav ul{
     background-position: 100%;
     image-rendering: auto;
     image-rendering: crisp-edges;
-    image-rendering: pixelated;
 }
 
 
@@ -789,10 +800,9 @@ nav ul{
     width: 100%;
     background-size: cover;
     background-position: 100%;
-    height: 800px;
+    height: 666px;
     image-rendering: auto;
     image-rendering: crisp-edges;
-    image-rendering: pixelated;
 }
 
 
@@ -942,7 +952,6 @@ nav ul{
     background-size: cover;
     image-rendering: auto;
     image-rendering: crisp-edges;
-    image-rendering: pixelated;
 }
 
 
@@ -1264,20 +1273,17 @@ nav.navbar.shrink .navbar-toggle {
 
 
 .title{
-    font-family: Custom-font1 , sans-serif;
+    font-family: JosefinSans-Regular , sans-serif;
     font-size: 36px;
 }
 
 h2{
-    font-family: Custom-font1 , sans-serif;
-    letter-spacing: -2px;
-    word-spacing: -4px;
+    font-family: JosefinSans-Regular , sans-serif;
 
 }
 
-.f-MyriadCAD{
-    font-family: Custom-font1 , 'PT Sans' ,sans-serif;
-    letter-spacing: -1px;
+.JosefinSans-Regular{
+    font-family: JosefinSans-Regular , 'PT Sans' ,sans-serif;
 }
 
 .copyright-section{
@@ -1298,16 +1304,9 @@ h2{
     color: #c01f25;
 }
 
-#services h1{
-    letter-spacing: -2px;
-}
 
 
-.carousel-inner>.item>a>img, .carousel-inner>.item>img::before{
-    background: rgba(17, 17, 17, 0.38);
 
-
-}
 
 
 
@@ -1419,7 +1418,6 @@ h2{
     .team-txt p{
         margin-top: 20px;
         font-size: 15px !important;
-        letter-spacing: .2px;
     }
 
     #services{
@@ -1435,8 +1433,6 @@ h2{
     .about-us-text h3{
         text-align: center!important;
         font-size: 20px;
-        letter-spacing: -1px;
-        word-spacing: -6px;
         margin-right: 0!important;
         line-height: 1.6em;
     }
@@ -1571,13 +1567,10 @@ h2{
 
     h1{
         font-size: 25px;
-        word-spacing: -12px;
-        letter-spacing: 1px!important;
         text-align: center;
     }
 
     h2{
-        letter-spacing: -1px;
         font-size: 25px;
     }
 
@@ -1678,7 +1671,12 @@ h2{
         margin-top: 20px!important;
     }
 
+    #testi-section p{
+        font-size: 14px;
+    }
 
+
+    /*/////////////Background image Fallbacks on mobile///////////*/
 
     #about-section ,#services ,#work-section-sort ,#team-section ,#process ,#testi-section ,#Event-calendar ,.join-us-bg{
         background: none;
@@ -1718,3 +1716,16 @@ h2{
 }
 
 
+img::before{
+    background: rgba(17, 17, 17, 0.38);
+
+}
+
+
+.fun-txt span{
+    border-right: 2px solid #b21c21;
+}
+
+.fun-txt span:last-child{
+    border-right: none;
+}

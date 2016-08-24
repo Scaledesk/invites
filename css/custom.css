@@ -356,7 +356,8 @@ nav ul{
 
 #process{
     z-index: 0;
-    background: rgba(17, 17, 17, 0.1)!important;
+    background: rgba(17, 17, 17, 0.1);
+    height: 630px;
 
 }
 
@@ -510,7 +511,7 @@ nav ul{
 
 
 .social-icon li a .f:hover{
-    color: #565a5c;
+    /*color: #565a5c;*/
     transition: all .2s ease-out;
 }
 
@@ -669,7 +670,7 @@ nav ul{
 }
 
 #footer-section .container-fluid{
-    padding: 100px 10px 10px;
+    padding: 100px 10px 0;
 }
 
 
@@ -1624,7 +1625,6 @@ h2{
     }
 
     #team-section h2{
-        letter-spacing: -2px;
         font-size: 20px;
     }
 
@@ -1633,7 +1633,6 @@ h2{
     }
 
     #process h2{
-        letter-spacing: -2px;
         font-size: 20px;
     }
 
@@ -1706,6 +1705,11 @@ h2{
 
     .join-us-bg{
         background-color: #fee9ce;
+    }
+
+
+    #process .container .fun-txt .fun-title{
+        font-size: 20px!important;
     }
 
 

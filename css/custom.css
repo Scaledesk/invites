@@ -357,7 +357,8 @@ nav ul{
 #process{
     z-index: 0;
     background: rgba(17, 17, 17, 0.1);
-    height: 630px;
+    height: 630px!important;
+    padding: 0!important;
 
 }
 
@@ -735,13 +736,13 @@ nav ul{
 }
 
 #contact-section{
-    /*background: url('../img/contact-us-bg.jpg');*/
+    background: url('../img/contact-us-bg.jpg');
     width: 100%;
     background-size: cover;
     /*height: 700px;*/
     image-rendering: auto;
     image-rendering: crisp-edges;
-    background: #f9f8f6;
+    /*background: #f9f8f6;*/
 }
 
 
@@ -1320,7 +1321,7 @@ h2{
         padding: 10px;
     }
 
-    #about-section ,#testi-section,.join-us-bg ,#Event-calendar,#contact-section,#process ,#work-section-sort{
+    #about-section ,#testi-section,.join-us-bg ,#Event-calendar,#contact-section ,#work-section-sort{
         height: 100%!important;
         padding: 10px!important;
     }
@@ -1345,6 +1346,7 @@ h2{
 
     #process .container p{
         font-size: 14px!important;
+        color: #fff!important;
 
     }
 
@@ -1423,7 +1425,7 @@ h2{
 
     #services{
         height: 100%!important;
-        background: none;
+        /*background: none;*/
     }
 
     .about-us-text img{
@@ -1677,39 +1679,46 @@ h2{
 
     /*/////////////Background image Fallbacks on mobile///////////*/
 
-    #about-section ,#services ,#work-section-sort ,#team-section ,#process ,#testi-section ,#Event-calendar ,.join-us-bg{
-        background: none;
-    }
+    /*#about-section ,#services ,#work-section-sort ,#team-section ,#process ,#testi-section ,#Event-calendar ,.join-us-bg{*/
+        /*background: none;*/
+    /*}*/
 
-    #about-section{
-        background-color: #bbe7d8;
-    }
+    /*#about-section{*/
+        /*background-color: #bbe7d8;*/
+    /*}*/
 
-    #services{
-        background: #eeedf5;
-        background: linear-gradient(top left  , #eeedf5);
-    }
+    /*#services{*/
+        /*background: #eeedf5;*/
+        /*background: linear-gradient(top left  , #eeedf5);*/
+    /*}*/
 
-    #team-section{
-        background-color: #b1d6df;
-    }
+    /*#team-section{*/
+        /*background-color: #b1d6df;*/
+    /*}*/
 
+
+    /*#process{*/
+        /*background-color: #dee8f1;*/
+    /*}*/
+
+    /*#Event-calendar{*/
+        /*background-color: #e2e1e9;*/
+    /*}*/
+
+    /*.join-us-bg{*/
+        /*background-color: #fee9ce;*/
+    /*}*/
 
     #process{
-        background-color: #dee8f1;
-    }
-
-    #Event-calendar{
-        background-color: #e2e1e9;
-    }
-
-    .join-us-bg{
-        background-color: #fee9ce;
+        color: #fff!important;
     }
 
 
     #process .container .fun-txt .fun-title{
         font-size: 20px!important;
+        text-align: center;
+        margin-top: 20px;
+        color: #fff!important;
     }
 
 

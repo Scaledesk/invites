@@ -736,13 +736,13 @@ nav ul{
 }
 
 #contact-section{
-    background: url('../img/contact-us-bg.jpg');
+    /*background: url('../img/contact-us-bg.jpg');*/
     width: 100%;
     background-size: cover;
     /*height: 700px;*/
     image-rendering: auto;
     image-rendering: crisp-edges;
-    /*background: #f9f8f6;*/
+    background: #f9f8f6;
 }
 
 

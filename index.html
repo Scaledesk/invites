@@ -2,23 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Invites</title>
+    <title>Sage</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Description" content="">
-
     <meta name="robots" content="noindex,nofollow">
+
+
+    <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+
+    <!-- Default Theme -->
+    <link rel="stylesheet" href="css/owl.theme.css">
 
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="bower_components/magnific-popup/dist/magnific-popup.css">
-    <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/animate.css">
-    <link href="https://fonts.googleapis.com/css?family=Karma" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
 
+    <!--Google fonts-->
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+
+    <!--Favicon-->
+    <link rel="icon" href="img/favicon.png">
+
+    <!--Jquery-->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
 
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar" data-offset="180">
+
+
+<!--Loader-->
+
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        setTimeout(function(){
+            $('body').addClass('loaded');
+            $('h1').css('color','#222222');
+        }, 2000);
+
+    });
+</script>
+
+
+
+<div id="loader-wrapper">
+    <div id="loader"></div>
+
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+
+</div>
+
+<!--end loader-->
+
 <header>
     <nav class="navbar navbar-default navbar-fixed-top custom-nav">
         <div class="container">
@@ -30,16 +72,22 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand custom-brand" href="#"><img src="img/invite-affairs-logo.png" class="h-logo" alt="" width="200"></a>
+                <a class="navbar-brand custom-brand" href="#"><img src="img/invite-affairs-logo.png" class="h-logo" alt="Logo"></a>
             </div>
+
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right ">
-                    <li><a href="#image-section" class="">Home </a></li>
-                    <li><a href="#about-section">About us</a></li>
-                    <li><a href="#services">Works</a></li>
-                    <li><a href="#team-section">Team</a></li>
-                    <li><a href="#contact-section">Contacts</a></li>
+                    <li><a  href="#platform-section" class="active">Platform </a></li>
+                    <li><a  href="#progress" class="active">Progress</a></li>
+                    <li><a  href="#services" class="active">Products</a></li>
+                    <li><a  href="#work-section-sort" class="active">Portfolio</a></li>
+                    <li><a  href="#team-section" class="active">People</a></li>
+                    <li><a  href="#process" class="active">Process</a></li>
+                    <li><a  href="#testi-section" class="active">Praise</a></li>
+                    <li><a  href="#Event-calendar" class="active">Postings</a></li>
+                    <li><a  href="#map-section" class="active">Place</a></li>
+
                 </ul>
             </div>
         </div>
@@ -50,18 +98,18 @@
 
 
 
-<!--image section-->
-<section id="image-section">
-    <!--<div class="img-section"></div>-->
+<!--image Slider section-->
+<section id="platform-section">
+    <div class="img-section"></div>
 
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <div id="carousel-example-generic" class="carousel slide hidden-xs" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
             <li data-target="#carousel-example-generic" data-slide-to="2"></li>
             <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+            <!--<li data-target="#carousel-example-generic" data-slide-to="4"></li>-->
 
         </ol>
 
@@ -69,8 +117,8 @@
         <div class="carousel-inner" role="listbox" >
 
             <div class="item active">
-                <img src="img/slide5.png" alt="...">
-                <div class="carousel-caption">
+                <img src="img/slide5.jpg" alt="..." width="100%">
+                <div class="carousel-caption JosefinSans-Regular">
                     A whiff of the grandeur and the grace of our royal heritage.
 
                 </div>
@@ -78,22 +126,16 @@
 
 
             <div class="item">
-                <img src="img/slide1.png" alt="...">
-                <div class="carousel-caption">
-                    Celebrate your success like never before
-                </div>
-            </div>
-            <div class="item">
-                <img src="img/slide2.png" alt="...">
-                <div class="carousel-caption">
+                <img src="img/slide2.jpg" alt="..." width="100%">
+                <div class="carousel-caption JosefinSans-Regular">
                     Not only contemporary and classy, but also bear royal touch of history.
                 </div>
             </div>
 
 
             <div class="item">
-                <img src="img/slide3.png" alt="...">
-                <div class="carousel-caption">
+                <img src="img/slide3.jpg" alt="..." width="100%">
+                <div class="carousel-caption JosefinSans-Regular">
                     Memories are priceless treasure of the heart
 
                 </div>
@@ -101,8 +143,8 @@
 
 
             <div class="item">
-                <img src="img/slide4.png" alt="...">
-                <div class="carousel-caption">
+                <img src="img/slide4.jpg" alt="..." width="100%">
+                <div class="carousel-caption JosefinSans-Regular">
                     Festivities end but memories last forever.
 
                 </div>
@@ -115,338 +157,460 @@
 
     </div>
 
-
 </section>
 
 
+<!--image Slider FOR MOBILE DEVICE-->
 
-<section id="meet-our-team">
-    <div class=" black-strip">
-        <h1 class="text-center">We Create Timeless Impressions</h1>
-    </div>
-    <div class="meet-our-team-bg">
-        <div class="team-box">
-            <div class="team-txt">
-                <h2>With</h2>
-                <h1 class="m-5">Quintessential</h1>
-                <h1 class="border-bottom m-5">Collection</h1>
-                <p class="f-18">Of royal cards that bask in finesse novelity and opulence and add that regal charm to your celebrations</p>
-            </div>
+<!--Note: Image Slider Removed For Mobile Section
+ -->
 
+<div id="section1" class="visible-xs">
+    <div class="mobile-bg ">
+        <div class="mobile-bg-txt">
+            <p>A</p>
+            <p>WHIFF OF</p>
+            <p>THE GRANDEUR</p>
+            <p>AND THE</p>
+            <p>GRACE OF OUR</p>
+            <p>ROYAL HERITAGE.</p>
         </div>
+
     </div>
+</div>
 
 
 
-    <div class="black-strip">
-        <p class="m-0">at</p>
-        <h1 class="m-5">Our Prestigious Invitation Studio</h1>
-    </div>
+<!--Progress section-->
 
+<section id="progress">
+    <img src="img/laptop.jpg" alt="" width="100%" class="img-responsive hidden-xs">
 </section>
+
+
+
+
+<!-- Progress Section FOR MOBILE DEVICE-->
+
+<div id="section2" class="visible-xs">
+    <div class="mobile-bg">
+        <div class="mobile-bg-txt">
+            <p>WE</p>
+            <p>CREATE</p>
+            <p>TIMELESS</p>
+            <p>IMPRESSIONS</p>
+        </div>
+
+
+    </div>
+</div>
+
+<!--ends here--->
+
 
 
 
 <!--about us section-->
-<section id="about-section">
+<section id="about-section" class="hidden-xs">
+    <div class="about-us-text">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-sm-offset-6 text-right col-sm-6 ">
+                    <h3 class="text-muted m-r-20 JosefinSans-Regular">AT OUR PRESTIGIOUS INNOVATION STUDIO</h3>
+
+                    <img src="img/invite-affairs-logo.png" alt="" width="300" class="m-30">
+                    <p class="text-muted">Based in New Delhi, noted for extraordinary invites and awe-inspiring personalized stationery for the most valued clients globally. We are sought after by wedding planners, corporate’s, celebrities, high profile socialites and those who look for the ultimate in invites and related stuff.</p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!--About Section FOR MOBILE DEVICE-->
+
+<div id="section3" class="visible-xs">
+    <div class="mobile-bg">
+        <p>AT OUR PRESTIGIOUS INNOVATION STUDIO</p>
+
+        <img src="img/invite-affairs-logo.png" alt="invite-affairs-logo" width=300 class="p-30">
+        <div class="mobile-bg-txt">
+            <p class="txt-format">Based in New Delhi, noted for extraordinary invites and awe-inspiring personalized stationery for
+                the most valued clients globally. We are sought after by wedding planners, corporate’s, celebrities, high
+                profile socialites and those who look for the ultimate in invites and related stuff.</p>
+        </div>
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+<section id="services" class="hidden-xs">
     <div class="container">
+        <div class="row m-t-60">
+
+            <div class="col-md-2 col-md-offset-1 col-sm-6 col-xs-6 wow zoomInUp">
+                <div class="service-box">
+                    <img src="img/5-c.png" alt="" width="90">
+                </div>
+                <div class="f-17 text-center text-uc m-t-20 service-caption">Wedding</div>
+
+            </div>
+
+
+            <div class="col-md-2 col-sm-6 col-xs-6 wow zoomInUp">
+                <div class="service-box">
+                    <img src="img/3-c.png" alt="" width="60">
+                </div>
+
+                <div class="f-17 text-center text-uc m-t-20 service-caption">Event</div>
+            </div>
+
+
+            <div class="col-md-2 col-sm-6 col-xs-6  wow zoomInUp">
+                <div class="service-box">
+                    <img src="img/2-c.png" alt="" width="70">
+                </div>
+                <div class="f-17 text-center text-uc m-t-20 service-caption">Party</div>
+
+            </div>
+
+
+            <div class="col-md-2 col-sm-6 col-xs-6 wow zoomInUp">
+                <div class="service-box">
+                    <img src="img/4-c.png" alt="" width="100">
+                </div>
+
+                <div class="f-17 text-center text-uc m-t-20 service-caption">Inauguaration</div>
+
+            </div>
+
+            <div class="col-md-2 col-sm-12 col-xs-12 wow zoomInUp">
+                <div class="service-box">
+                    <img src="img/1-c.png" alt="" width="75">
+                </div>
+
+                <div class="f-17 text-center text-uc m-t-20 service-caption">Special Ocassion</div>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8">
+                <h1 class="text-muted JosefinSans-Regular">BY DOING WHAT WE ARE BEST AT</h1>
+                <p class="f-18 text-muted txt-format">Quality, exclusivity and diversity of services are the prime factors that set us apart. We draw inspiration from varied fields - arts, Entertainment, fashion, people, places, society and many more.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!--About Section FOR MOBILE DEVICE-->
+
+<div id="section4" class="visible-xs">
+
+    <div class="mobile-bg ">
+        <div class="row m-t-40">
+
+            <div class="col-xs-4 text-center">
+                <img src="img/5-c.png" alt="" width="35" height="35">
+                <div class="f-14 text-center text-uc">Wedding</div>
+
+            </div>
+
+
+            <div class="col-xs-4 text-center">
+                <img src="img/3-c.png" alt="" width="35" height="35">
+
+                <div class="f-14 text-center text-uc">Event</div>
+            </div>
+
+
+            <div class="col-xs-4">
+                <img src="img/2-c.png" alt="" width="35" height="35">
+                <div class="f-14 text-center text-uc ">Party</div>
+
+            </div>
+
+
+
+
+        </div>
+
+
+        <div class="row m-t-40">
+            <div class="col-xs-4 col-xs-offset-2 p-0">
+                <img src="img/4-c.png" alt="" width="35" height="35">
+                <div class="f-14 text-center text-uc">Inauguaration</div>
+
+            </div>
+
+
+            <div class="col-xs-4 p-0">
+                <img src="img/1-c.png" alt="" width="35" height="35">
+                <div class="f-14 text-center text-uc">Special Ocassion</div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+        <div class="mobile-bg-txt">
+            <h3>BY DOING WHAT WE ARE BEST AT</h3>
+
+            <p class="txt-format">Quality, exclusivity and diversity of services are the prime factors that set us apart. We draw inspiration from varied fields – arts, entertainment, fashion, people, places, society and many more.</p>
+        </div>
+
+    </div>
+
+
+
+</div>
+
+
+
+
+
+<section id="work-section-sort" class="hidden-xs">
+    <div class="container ">
         <div class="row">
             <div class="col-md-12 text-center">
-                <img src="img/invite-affairs-logo.png" alt="" width="300">
-            </div>
-        </div>
+                <div class="black-c title JosefinSans-Regular">With Our Masterpiece Creations</div>
+                <p class="f-20 text-center text-muted">Creating your loyal stuff for the rich and diverse taste specific to culture, occasion and festivity. </p>
 
-        <div class="row">
-            <div class="col-md-12 m-t-60 ">
-                <p>Based in Delhi, noted for extraordinary cards and awe-inspiring personalized Stationary for the most valued clients at national and international level.</p>
-                <p class="m-t-40">We are Sought after by wedding planners, Celebrities, high profile socialites and those who look for the ultimate in invites and related stuff.</p>
+                <p class="f-20 text-center text-muted m-t-10">Every piece of creation epitomizes a fusion of ethinic , modern , trendy  and design thoughts.</p>
             </div>
         </div>
     </div>
-</section>
 
-
-
-<div class="black-strip">
-    <div class="row">
-        <div class="col-md-12">
-            <p class="m-5 text-center">by</p>
-            <h1 class="m-5">Doing What We Are Best At..</h1>
-        </div>
-    </div>
-</div>
-
-
-
-
-<section id="services">
-    <div class="container">
-        <div class="row m-t-40">
-            <div class="col-md-12">
-                <p class="f-18 text-center m-b-40">Quality, exclusivity and diversity of services are the prime factors that set us apart. We draw inspiration from varied fields - arts, Entertainment, fashion, people, places, society and many more.</p>
-            </div>
-
-
-            <div class="row m-t-40">
-
-                <div class="col-md-2 col-md-offset-1 col-sm-4 wow zoomInUp">
-                    <div class="service-box">
-                        <img src="img/service-5.png" alt="" width="60">
-                    </div>
-                    <div class="f-18 text-center text-uc m-t-10 service-caption">Weddings</div>
-                </div>
-
-
-                <div class="col-md-2 col-sm-4 wow zoomInUp">
-                    <div class="service-box">
-                        <img src="img/service-3.png" alt="" width="60">
-                    </div>
-
-                    <div class="f-18 text-center text-uc m-t-10 service-caption">Events</div>
-                </div>
-
-
-                <div class="col-md-2 col-sm-6  wow zoomInUp">
-                    <div class="service-box">
-                        <img src="img/service-2.png" alt="" width="60">
-                    </div>
-                    <div class="f-18 text-center text-uc m-t-10 service-caption">Party</div>
-
-                </div>
-
-
-                <div class="col-md-2 col-sm-6 wow zoomInUp">
-                    <div class="service-box">
-                        <img src="img/service-4.png" alt="" width="60">
-                    </div>
-
-                    <div class="f-18 text-center text-uc m-t-10 service-caption">Inauguaration</div>
-
-                </div>
-
-                <div class="col-md-2 col-sm-6 wow zoomInUp">
-                    <div class="service-box">
-                        <img src="img/service-1.png" alt="" width="60">
-                    </div>
-
-                    <div class="f-18 text-center text-uc m-t-10 service-caption">Special Ocassions</div>
-
-                </div>
-
-
-            </div>
-        </div>
-
-    </div>
-</section>
-
-
-
-<div class="black-strip m-t-40">
-    <div class="row">
-        <div class="col-md-12">
-            <p>with</p>
-            <h1 class="m-5">Our Masterpiece Creations</h1>
-        </div>
-    </div>
-</div>
-
-
-<section id="work-section-sort" class="p-b-40">
-    <div class="container m-t-40">
-        <div class="row">
-            <div class="col-md-12">
-                <p class="f-18 text-center">Creating your loyal stuff for the rich and diverse taste specific to culture, occasion and festivity.  Every piece of creation epitomizes a fusion of ethinic , modern , trendy  and design thoughts.</p>
-            </div>
-        </div>
-    </div>
     <div class="container">
         <div class="row">
 
-            <!--<div class="col-xs-12">-->
-
-                <!--<div class="button-group filters-button-group text-center">-->
-                    <!--<button class="button" data-filter=".metal">Weddings</button>-->
-                    <!--<button class="button" data-filter=".transition">Inauguration</button>-->
-                    <!--<button class="button" data-filter=".alkali, .alkaline-earth">Party</button>-->
-                    <!--<button class="button" data-filter=":not(.transition)">Anniversary</button>-->
-
-                <!--</div>-->
-
-                <!--<div class="grid">-->
-                    <!--<div class="element-item transition metal " data-category="transition">-->
-                        <!--<img src="img/isotopes/isotop1.jpg"  width="200" height="200" alt="" class="img-circle">-->
-                    <!--</div>-->
-
-                    <!--<div class="element-item metalloid " data-category="metalloid">-->
-                        <!--<img src="img/isotopes/isotop2.jpg" width="200" height="200" alt="" class="img-circle">-->
-                    <!--</div>-->
-
-                    <!--<div class="element-item post-transition metal " data-category="post-transition">-->
-                        <!--<img src="img/isotopes/isotop3.jpg" width="200" height="200" alt="" class="img-circle">-->
-                    <!--</div>-->
-
-
-                    <!--<div class="element-item post-transition metal " data-category="post-transition">-->
-                        <!--<img src="img/isotopes/isotop4.jpg"   width="200" height="200" alt="" class="img-circle">-->
-                    <!--</div>-->
-
-
-                    <!--<div class="element-item post-transition alkali alkaline-earth " data-category="post-transition">-->
-                        <!--<img src="img/isotopes/isotop4.jpg"   width="200" height="200" alt="" class="img-circle">-->
-                    <!--</div>-->
-
-                <!--</div>-->
-
-            <!--</div>-->
-
-
-            <div class="col-xs-12 text-center">
+            <div class="col-xs-12">
                 <div class="popup-gallery">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <a href="img/isotopes/isotop1.jpg" class="wow fadeInDown"><img src="img/isotopes/isotop1.jpg"   width="200" height="200" alt="" class="img-circle ">
+
+                    <div id="owl-demo" class="owl-carousel owl-theme">
+                        <div class="item">
+                            <a href="img/slide1.jpg" class="wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;"><img src="img/thumbnail/slide1.jpg" alt="" width="250" height="250" >
                             </a>
-
                         </div>
 
-                        <div class="col-md-3">
-                            <a href="img/isotopes/isotop2.jpg" class="wow fadeInDown"><img src="img/isotopes/isotop2.jpg"  width="200" height="200" alt="" class="img-circle "></a>
+                        <div class="item">
+                            <a href="img/slide2.jpg" class="wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;"><img src="img/thumbnail/slide2.jpg" alt="" width="250" height="250" >
+                            </a>
                         </div>
 
+                        <div class="item">
+                            <a href="img/slide3.jpg" class="wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;"><img src="img/thumbnail/slide3.jpg" alt="" width="250" height="250" >
+                            </a>
+                        </div>
 
-                    <!--</div>-->
+                        <div class="item">
+                            <a href="img/slide4.jpg" class="wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;"><img src="img/thumbnail/slide4.jpg" alt="" width="250" height="250">
+                            </a>
+                        </div>
 
+                        <div class="item">
+                            <a href="img/slide5.jpg" class="wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;"><img src="img/thumbnail/slide5.jpg" alt="" width="250" height="250" >
+                            </a>
+                        </div>
 
+                        <div class="item">
+                            <a href="img/slide1.jpg" class="wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;"><img src="img/thumbnail/slide1.jpg" alt="" width="250" height="250" >
+                            </a>
+                        </div>
 
-                    <div class="col-md-3">
-                        <a href="img/isotopes/isotop3.jpg" class="wow fadeInDown"><img src="img/isotopes/isotop3.jpg"  width="200" height="200" alt="" class="img-circle "></a>
+                        <div class="item">
+                            <a href="img/slide2.jpg" class="wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;"><img src="img/thumbnail/slide2.jpg" alt="" width="250" height="250" >
+                            </a>
+                        </div>
+
                     </div>
-
-
-                    <div class="col-md-3">
-                        <a href="img/isotopes/isotop4.jpg" class="wow fadeInDown"><img src="img/isotopes/isotop4.jpg"  width="200" height="200" alt="" class="img-circle "></a>
-                    </div>
-
-
-
-
-                        <!--<div class="col-md-2">-->
-                            <!--<a href="img/isotopes/isotop1.jpg" class="wow fadeInDown"><img src="img/isotopes/isotop1.jpg"   width="200" height="200" alt="" class="img-circle m-r-40">-->
-                            <!--</a>-->
-                        <!--</div>-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 </div>
 
-                </div>
-
-
-
+            </div>
         </div>
     </div>
 </section>
 
 
 
-<!--Black strip-->
-<div class="black-strip">
-    <p class="m-0">From The Team</p>
-    <h1 class="m-5">Being Passionate, Maverick & Focused</h1>
+
+<!--Our Portfolio section FOR MOBILE DEVICE-->
+
+<div id="section5" class="visible-xs">
+    <div class="mobile-bg ">
+        <div class="mobile-bg-txt">
+            <h3>WITH OUR MASTERPIECE CREATIONS</h3>
+            <p class="txt-format">Creating royal stuff for the rich and diversetastes specific to culture, occasion and festivity.Every piece of creation epitomizes a fusion of ethnic, modern, trendy and innovative design thoughts.</p>
+
+        </div>
+
+
+        <div class="row">
+
+            <div class="col-xs-12">
+                <div class="popup-gallery">
+
+                    <div id="owl-demo1" class="owl-carousel owl-theme">
+                        <div class="item">
+                            <a href="img/slide1.jpg" class="wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;"><img src="img/thumbnail/slide1.jpg" alt="" width="250" height="250" >
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="img/slide2.jpg" class="wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;"><img src="img/thumbnail/slide2.jpg" alt="" width="250" height="250" >
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="img/slide3.jpg" class="wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;"><img src="img/thumbnail/slide3.jpg" alt="" width="250" height="250" >
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="img/slide4.jpg" class="wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;"><img src="img/thumbnail/slide4.jpg" alt="" width="250" height="250">
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="img/slide5.jpg" class="wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;"><img src="img/thumbnail/slide5.jpg" alt="" width="250" height="250" >
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="img/slide1.jpg" class="wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;"><img src="img/thumbnail/slide1.jpg" alt="" width="250" height="250" >
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="img/slide2.jpg" class="wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;"><img src="img/thumbnail/slide2.jpg" alt="" width="250" height="250" >
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
 </div>
-<!--ends here-->
+
+
+
+
+
 
 
 
 
 <!--Work section--->
-<section id="team-section" class="p-t-40">
+<section id="team-section" class="p-t-40 hidden-xs">
     <div class="container">
+
         <div class="row">
-            <div class="col-md-12 text-center">
-                <!--<div class="text-center" style="height: 13px; border-bottom: 1px solid #dedede ;">-->
-                     <!--<span style="font-size: 18px; background-color: #fdf9f3 ; padding: 0 10px;">-->
-                     <!--<i class="fa fa-heart-o"></i>-->
-                     <!--</span>-->
-                <!--</div>-->
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3 col-sm-4 col-xs-12 wow slideInLeft">
+
+            <div class="col-md-3 col-sm-6 col-xs-6 wow slideInLeft">
                 <figure class="team-member">
-                    <img src="img/6.png" alt=""  width="200" class="img-circle">
-                    <figcaption class="text-right m-10 f-18">The Illustrator</figcaption>
+                    <img src="img/1.1.png" alt=""  width="150" class="img-circle">
+                    <figcaption class="text-right  f-18">The Art Director</figcaption>
                 </figure>
             </div>
 
 
-            <div class="col-md-3 col-sm-4 col-xs-12 wow slideInLeft">
+            <div class="col-md-3 col-sm-6 col-xs-6 wow slideInRight">
                 <figure class="team-member">
-                    <img src="img/2.png" alt=""  width="200" class="img-circle">
-                    <figcaption class="text-right m-10 f-18">The Copywriter</figcaption>
+                    <img src="img/1.png" alt=""  width="150"  height="150" class="img-circle">
+                    <figcaption class="text-right  f-18">The Visualizer</figcaption>
                 </figure>
             </div>
 
 
-            <div class="col-md-3 col-sm-4 col-xs-12 wow slideInLeft">
+            <div class="col-md-3 col-sm-6 col-xs-6 wow slideInLeft">
                 <figure class="team-member">
-                    <img src="img/3.png" alt=""  width="200" class="img-circle">
-                    <figcaption class="text-right m-10 f-18">The Marketing <br> Manager</figcaption>
+                    <img src="img/3.png" alt=""  width="150" class="img-circle">
+                    <figcaption class="text-right  f-18">The Marketing <br> Manager</figcaption>
                 </figure>
             </div>
 
-            <div class="col-md-3 col-sm-4 col-xs-12 wow slideInLeft">
+
+            <div class="col-md-3 col-sm-6 col-xs-6 wow slideInRight">
                 <figure class="team-member">
-                    <img src="img/1.1.png" alt=""  width="200" class="img-circle">
-                    <figcaption class="text-right m-10 f-18">The Art <br> Director</figcaption>
+                    <img src="img/4.png" alt=""  width="150" class="img-circle">
+                    <figcaption class="text-right  f-18">The Production <br> Artist</figcaption>
                 </figure>
             </div>
+
 
 
         </div>
 
 
+
         <div class="row">
-            <div class="col-md-3 col-sm-4 col-xs-12 wow slideInRight">
+            <div class="col-md-12 text-center m-b-20">
+                <h2>FROM THE TEAM BEING PASSIONATE,</h2>
+                <h2>MAVERICK & FOCUSSED</h2>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-6 wow slideInLeft">
                 <figure class="team-member">
-                    <img src="img/4.png" alt=""  width="200" class="img-circle">
-                    <figcaption class="text-right m-10 f-18">The Production <br> Artist</figcaption>
+                    <img src="img/6.png" alt=""  width="150" class="img-circle">
+                    <figcaption class="text-right  f-18">The Illustrator</figcaption>
                 </figure>
             </div>
 
 
-            <div class="col-md-3 col-sm-4 col-xs-12 wow slideInRight">
+            <div class="col-md-3 col-sm-6 col-xs-6 wow slideInRight">
                 <figure class="team-member">
-                    <img src="img/5.png" alt=""  width="200" class="img-circle">
-                    <figcaption class="text-right m-10 f-18">The Account <br> Manager</figcaption>
+                    <img src="img/5.png" alt=""  width="150" class="img-circle">
+                    <figcaption class="text-right  f-18">The Account <br> Manager</figcaption>
                 </figure>
             </div>
 
 
-            <div class="col-md-3 col-sm-4 col-xs-12 wow slideInRight">
+
+            <div class="col-md-3 col-sm-6 col-xs-6 wow slideInLeft">
                 <figure class="team-member">
-                    <img src="img/1.png" alt=""  width="200" class="img-circle">
-                    <figcaption class="text-right m-10 f-18">The Visualizer</figcaption>
+                    <img src="img/2.png" alt=""  width="150" class="img-circle">
+                    <figcaption class="text-right  f-18">The Copywriter</figcaption>
                 </figure>
             </div>
 
 
-            <div class="col-md-3 col-sm-4 col-xs-12 wow slideInRight">
+
+            <div class="col-md-3 col-sm-6 col-xs-6 wow slideInRight">
                 <figure class="team-member">
-                    <img src="img/1.2.png" alt=""  width="200" class="img-circle">
-                    <figcaption class="text-right m-10 f-18">The Graphic <br>Artist</figcaption>
+                    <img src="img/1.2.jpg" alt=""  width="150" class="img-circle">
+                    <figcaption class="text-right  f-18">The Graphic Artist</figcaption>
                 </figure>
             </div>
 
@@ -457,239 +621,754 @@
 
 
 
-<!--Black strip-->
-<div class="black-strip">
-    <h1 class="m-5">We Make It Damn Simple For You</h1>
-    <p class="m-0">through</p>
-</div>
-<!--ends here-->
+<!--Our Portfolio section FOR MOBILE DEVICE-->
+
+<div id="section6" class="visible-xs">
+    <div class="mobile-bg ">
+        <div class="row m-b-40">
+
+            <div class="col-xs-6 wow slideInLeft">
+                <figure class="team-member">
+                    <img src="img/1.1.png" alt=""  width="100" class="img-circle">
+                    <figcaption class="text-center  f-18">The Art Director</figcaption>
+                </figure>
+            </div>
+
+
+            <div class="col-xs-6 wow slideInRight">
+                <figure class="team-member">
+                    <img src="img/1.png" alt=""  width="100"  height="100" class="img-circle">
+                    <figcaption class="text-center  f-18">The Visualizer</figcaption>
+                </figure>
+            </div>
+
+
+            <div class="col-xs-6 p-t-40">
+                <figure class="team-member">
+                    <img src="img/3.png" alt=""  width="100" class="img-circle">
+                    <figcaption class="text-center  f-18">The Marketing <br> Manager</figcaption>
+                </figure>
+            </div>
+
+
+            <div class="col-xs-6 p-t-40">
+                <figure class="team-member">
+                    <img src="img/4.png" alt=""  width="100" class="img-circle">
+                    <figcaption class="text-center  f-18">The Production <br> Artist</figcaption>
+                </figure>
+            </div>
 
 
 
-<!--fun-facts-section-->
-<section id="fun-facts-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <p class="f-18 text-center"> With us, getting started is easy, enjoyable and hassle-free. We have broad and diverse gallery from where you may choose a design you love and we will love to Customize it as per the specific demands of festivities and your taste. And if you fail to get what you searching for, just let us create it for you! During the process, we will be there for you at every step of the way. Lets get started!     </p>
+        </div>
 
+
+
+        <div class="row m-t-20 m-b-20">
+            <div class="col-md-12 text-center m-b-20">
+                <h4>FROM THE TEAM BEING PASSIONATE,</h4>
+                <h4>MAVERICK & FOCUSSED</h4>
             </div>
         </div>
 
+
+        <div class="row">
+            <div class="col-xs-6 wow slideInLeft">
+                <figure class="team-member">
+                    <img src="img/6.png" alt=""  width="100" class="img-circle">
+                    <figcaption class="text-center  f-18">The Illustrator</figcaption>
+                </figure>
+            </div>
+
+
+            <div class="col-xs-6 wow slideInRight">
+                <figure class="team-member">
+                    <img src="img/5.png" alt=""  width="100" class="img-circle">
+                    <figcaption class="text-center  f-18">The Account <br> Manager</figcaption>
+                </figure>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-xs-6 p-t-40">
+                <figure class="team-member">
+                    <img src="img/2.png" alt=""  width="100" class="img-circle">
+                    <figcaption class="text-center  f-18">The Copywriter</figcaption>
+                </figure>
+            </div>
+
+
+
+            <div class="col-xs-6 p-t-40">
+                <figure class="team-member">
+                    <img src="img/1.2.jpg" alt=""  width="100" class="img-circle">
+                    <figcaption class="text-center  f-18">The Graphic Artist</figcaption>
+                </figure>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+</div>
+
+
+
+<!--process-->
+<section id="process" class="overlay hidden-xs">
+    <div class="container">
         <div class="row m-b-10 m-t-40">
-            <div class="col-md-12 text-center">
-                <p class="f-24">CONCEPTUALIZING&nbsp;&nbsp; | DESIGNING&nbsp;&nbsp; | PRINTING&nbsp;&nbsp; | PACKAGING</p>
+            <div class="col-md-12 text-justify">
+                <div class="fun-txt">
+                    <div class="JosefinSans-Regular f-29 fun-title">WE MAKE IT DAMN SIMPLE FOR YOU</div>
+                    <p class="f-20 text-muted JosefinSans-Regular m-t-10"><span>CONCEPTUALIZING&nbsp;</span> <span>DESIGNING&nbsp;</span>  <span>PRINTING&nbsp;</span>  <span>PACKAGING</span> </p>
+
+                    <p class="f-18 text-justify text-muted m-t-20"> With us, getting started is easy, enjoyable and hassle-free. We have broad and diverse gallery from where you may choose a design you love and we will love to Customize it as per the specific demands of festivities and your taste. And if you fail to get what you searching for, just let us create it for you! During the process, we will be there for you at every step of the way. Lets get started!
+                    </p>
+
+
+                    <div class="row">
+
+                        <div class="col-md-2 col-sm-6 m-10 p-0 col-xs-6 text-center">
+                            <div class="fun-box">
+                                <img src="img/clock.svg" alt="" width="40">
+                            </div>
+
+                            <div class="count ">4000 <i class="fa fa-plus f-22"></i>
+                                <p class="text-center">Days of Work</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-2 col-sm-6 p-0 m-10 col-xs-6 text-center">
+                            <div class="fun-box">
+                                <img src="img/users.svg" alt="" width="40">
+                            </div>
+
+                            <div class="count">100 <i class="fa fa-plus f-22"></i>
+                                <p class="text-center ">Satisfied Clients</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-2 col-sm-6 p-0 m-10 col-xs-6 text-center">
+                            <div class="fun-box">
+                                <img src="img/rocket-ship.svg" alt="" width="40">
+                            </div>
+
+                            <div class="count">150 <i class="fa fa-plus f-22"></i>
+                                <p class="text-center">Project Delivered</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-2 col-sm-6 m-10 col-xs-6 text-center">
+                            <div class="fun-box">
+                                <img src="img/earth.svg" alt="" width="40">
+                            </div>
+
+                            <div class="count">10 <i class="fa fa-plus f-22"></i>
+                                <p class="text-center">Countries</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-md-2 col-sm-12 m-10 col-xs-12 text-center">
+                            <div class="fun-box">
+                                <img src="img/trophy.svg" alt="" width="40">
+                            </div>
+
+                            <div class="count m-b-0">5 <i class="fa fa-plus f-22"></i>
+                                <p class="text-center">Awards</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+
             </div>
         </div>
 
-        <div class="row ">
-
-            <div class="col-md-3 col-sm-6">
-                <div class="fun-box">
-                    <i class="fa fa-clock-o f-8" aria-hidden="true"></i>
-                </div>
-                <div class="count text-center w-500">2000&nbsp;<i class="fa fa-plus"></i></div>
-                <p class="text-center w-500 f-18">Days of Work</p>
-            </div>
 
 
-            <div class="col-md-3 col-sm-6">
-                <div class="fun-box">
-                    <i class="fa fa-users f-8" aria-hidden="true"></i>
-                </div>
-                <div class="count text-center w-500">100&nbsp;<i class="fa fa-plus"></i></div>
-                <p class="text-center w-500 f-18">Satisfied Clients</p>
-            </div>
-
-
-            <div class="col-md-3 col-sm-6">
-                <div class="fun-box">
-                    <i class="fa fa-rocket f-8" aria-hidden="true"></i>
-                </div>
-                <div class="count text-center w-500">150&nbsp;<i class="fa fa-plus"></i></div>
-                <p class="text-center w-500 f-18">Project Delivered</p>
-            </div>
-
-
-            <div class="col-md-3 col-sm-6">
-                <div class="fun-box">
-                    <i class="fa fa-globe f-8" aria-hidden="true"></i>
-                </div>
-
-                <div class="count text-center w-500">10&nbsp;<i class="fa fa-plus"></i>
-                </div>
-                <p class="text-center w-500 f-18">Countries</p>
-            </div>
-        </div>
     </div>
 </section>
 
 
-<div class="black-strip">
-    <h1 class="m-5">You Better See What They Say</h1>
-    <p class="m-0">Reviews &amp; Testimonials</p>
-</div>
+
+<!--Process section FOR MOBILE DEVICE-->
+
+<div id="section7" class="visible-xs">
+    <div class="mobile-bg ">
+
+        <h4>WE MAKE IT DAMN SIMPLE FOR YOU</h4>
+
+        <p class="f-14 text-muted JosefinSans-Regular m-t-10"><span>CONCEPTUALIZING&nbsp;|</span> <span>DESIGNING&nbsp;|</span>  <span>PRINTING&nbsp;|</span>  <span>PACKAGING</span> </p>
 
 
-<section id="comment-section">
-    <div class="container-fluid">
+        <p class="p-20 txt-format">With us, getting started is easy, enjoyable and hassle-free. We have broad and diverse gallery from where you may choose a design you love and we will love to Customize it as per the specific demands of festivities and your taste. And if you fail to get what you searching for, just let us create it for you! During the process, we will be there for you at every step of the way. Lets get started!</p>
+
+
         <div class="row">
-            <div class="col-md-12">
-                <p class="f-18 m-b-0">
-                    I was So impressed by the beautiful cards and they were delivered within deadline. Exceeded my expectations!!!</p>
 
-                <p class="f-18 m-b-0">
-                    I will write a review on how great you are as a company. Thank you so much.
-                </p>
-
-
-                <div class="f-18 w-500 m-t-10 m-b-0">
-                    Neeraj Mehra   <span>(Dated: 20/06/2013)</span>
+            <div class="p-0 col-xs-4 text-center">
+                <div class="fun-box">
+                    <img src="img/clock.svg" alt="" width="40">
                 </div>
 
-                <!--<p class="f-16">Dated: 20/06/2013</p>-->
+                <div class="count ">4000 <i class="fa fa-plus f-22"></i>
+                    <p class="text-center">Days of Work</p>
+                </div>
+            </div>
 
 
-
-                <div class="f-18 m-b-0 m-t-40">
-                    I received the package. The invitations look wonderful. Thank you.
+            <div class=" p-0 col-xs-4 text-center">
+                <div class="fun-box">
+                    <img src="img/users.svg" alt="" width="40">
                 </div>
 
+                <div class="count">100 <i class="fa fa-plus f-22"></i>
+                    <p class="text-center ">Satisfied Clients</p>
+                </div>
+            </div>
 
-                <div class="f-18 w-500 m-b-0 m-t-10">
-                    Kapil Shukla  <span>(Dated: 09/06/2013)</span>
+
+            <div class=" p-0  col-xs-4 text-center">
+                <div class="fun-box">
+                    <img src="img/rocket-ship.svg" alt="" width="40">
                 </div>
 
-                <!--<p class="f-16">Dated: 09/06/2013</p>-->
+                <div class="count">150 <i class="fa fa-plus f-22"></i>
+                    <p class="text-center">Project Delivered</p>
+                </div>
+            </div>
 
 
-
-                <p class="f-18 m-b-0 m-t-40">
-                    Hi there, I just wanted to let you know that I received the invitations in time, and they look great!
-                </p>
+        </div><!--end row-->
 
 
-                <p class="f-18">Thank you for all your help and great service. Best Regards</p>
+        <div class="row m-t-60">
 
+            <div class="col-xs-6 text-center">
+                <div class="fun-box">
+                    <img src="img/earth.svg" alt="" width="40">
+                </div>
 
-                <div class="f-18 w-500 m-b-0">Sanjay Kumar (Dated: 09/06/2013)</div>
-                <!--<p class="f-16">Dated: 09/06/2013</p>-->
-
-
-
-                <p class="f-18 m-b-0 m-t-40">
-                    Hello, I have received my wedding invitations and they are perfect. Exactly how I wanted them. Thank You all so much I am so happy with them  and will be recommending you to all my friends and family. Many Thanks
-                </p>
-
-
-
-                <p class="f-20 w-800 m-b-0 m-t-10">Miss Shilpi Kejriwal</p>
-                <div class="f-16 m-b-0">United Kingdom</div>
-
-                <p class="f-16">Dated: 23/03/2014</p>
-
-
-
-
-                <p class="f-18 m-b-0 m-t-40">We have received the wedding cards and they are very nice. Thank you for your help and patience in putting them together</p>
-
-
-
-                <p class="f-20 w-800 m-b-0 m-t-10">Ayaz khan</p>
-                <p class="f-16">Dated: 02/09/2014</p>
-
-
-
-                <p class="f-18 m-b-0 m-t-40">We want to say thank you again. We received the items perfectly I LOVE THEM</p>
-
-                <p class="f-20 w-800 m-b-0 m-t-10">Krishna & Karishma</p>
-                <p class="f-16">Dated: 21/05/2015</p>
-
-
+                <div class="count">10 <i class="fa fa-plus f-22"></i>
+                    <p class="text-center">Countries</p>
+                </div>
 
             </div>
+
+
+            <div class="col-xs-6 text-center">
+                <div class="fun-box">
+                    <img src="img/trophy.svg" alt="" width="40">
+                </div>
+
+                <div class="count m-b-0">5 <i class="fa fa-plus f-22"></i>
+                    <p class="text-center">Awards</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+
+
+<!--Testimonial Section for Desktop-->
+
+
+<section id="testi-section" class="hidden-xs">
+    <div class="container">
+        <div class="row">
+
+            <div class="testi-bg">
+
+                <div class="col-md-12">
+                    <h2 class="visible-xs visible-sm text-center f-20">What people Say</h2>
+                    <div id="carousel-example-generic-1" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators hidden-xs hidden-sm slider-indiactor">
+                            <li data-target="#carousel-example-generic-1" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic-1" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic-1" data-slide-to="2"></li>
+                            <li data-target="#carousel-example-generic-1" data-slide-to="3"></li>
+                            <li data-target="#carousel-example-generic-1" data-slide-to="4"></li>
+
+
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <div class="row testi-comment">
+                                    <div class="col-md-2">
+                                        <img src="img/1.png" alt="..." class="img-circle" width="100">
+
+                                    </div>
+
+                                    <div class="col-md-8">
+                                        <p class="f-16">I am delighted with the outcome! The invites are as we hoped they should be. My friends and relatives who received invites are showering praise for cards.  They have emailed me, called me or told me face to face how beautiful and brilliant the invites are. I think the best compliment from one of my friends is… he wrote 'This is simply the most elegant invite I have ever seen'. Incredible!</p>
+                                        <h4 class="m-t-10 text-uc">Ayaz khan</h4>
+
+                                        <p><i>Dated: 02/09/2014</i></p>
+
+
+
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+
+                            <div class="item">
+                                <div class="row testi-comment">
+                                    <div class="col-md-2">
+                                        <img src="img/1.png" alt="..." class="img-circle" width="100">
+
+                                    </div>
+
+                                    <div class="col-md-8">
+                                        <p class="f-16">Wow, great selection of cards….beautifully simple, elegant and modern!  Ideal for any occasion! Thanks a lot…</p>
+                                        <h4 class="m-t-10 text-uc">Kapil Shukla</h4>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="item">
+                                <div class="row testi-comment">
+                                    <div class="col-md-2">
+                                        <img src="img/1.png" alt="..." class="img-circle" width="100">
+
+                                    </div>
+
+                                    <div class="col-md-8">
+                                        <p class="f-16">Superb print quality, exquisite paper with wonderful service from a wonderful professional team.</p>
+                                        <h4 class="m-t-10 text-uc">Sanjay Kumar </h4>
+
+                                        <p>Dated: 09/06/2013</p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="item">
+                                <div class="row testi-comment">
+                                    <div class="col-md-2">
+                                        <img src="img/1.png" alt="..." class="img-circle" width="100">
+
+                                    </div>
+
+                                    <div class="col-md-8">
+
+                                        <p class="f-16">You guys are totally awesome. No wedding should go ahead without Invite Affairs cards & stationery. You designed and printed for us exactly how we wanted them. Thank you all so much I am so happy with them and will be recommending you to all. Many thanks….</p>
+                                        <h4 class="m-t-10 text-uc">Miss Shilpi Kejriwal</h4>
+
+                                        <p><i>United Kingdom ,Dated: 23/03/2014</i></p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="item">
+                                <div class="row testi-comment">
+                                    <div class="col-md-2">
+                                        <img src="img/1.png" alt="..." class="img-circle" width="100">
+
+                                    </div>
+
+                                    <div class="col-md-8">
+                                        <p class="f-16">I was so impressed by the beautiful cards and they were delivered within deadline. Exceeded my expectations! Feeling blessed… Thank you so much</p>
+                                        <h4 class="m-t-10 text-uc">Ruby Mehra</h4>
+
+                                        <p>Dated: 20/06/2013</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="item">
+                                <div class="row testi-comment">
+                                    <div class="col-md-2">
+                                        <img src="img/1.png" alt="..." class="img-circle" width="100">
+
+                                    </div>
+
+                                    <div class="col-md-8">
+                                        <p class="f-16">Thank you so much for the absolutely stunning wedding invitations. Perfectly designed, perfectly printed, perfectly written and off course ready for posting with gorgeous stationery. You have provided an excellent service, we will certainly recommend you to my friends and relatives</p>
+                                        <h4 class="m-t-10 text-uc">Krishna & Karishma</h4>
+
+                                        <p><i>Dated: 21/05/2015</i></p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
 
 
-<div class="event-title-bg border-top">
-    <p class="m-0">When &amp; Where</p>
-    <h1 class="m-5">Event Calendar</h1>
+
+<!--Testimonial Section for Mobile-->
+
+
+<div id="section8" class="visible-xs">
+    <div class="mobile-bg ">
+        <h4>YOU BETTER SEE  WHAT THEY SAY</h4>
+        <h4>REVIEWS &  TESTIMONIALS</h4>
+
+        <div class="col-xs-12 m-t-60">
+            <div id="carousel-example-generic-1" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators hidden-xs hidden-sm slider-indiactor">
+                    <li data-target="#carousel-example-generic-1" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic-1" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic-1" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic-1" data-slide-to="3"></li>
+                    <li data-target="#carousel-example-generic-1" data-slide-to="4"></li>
+
+
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <div class="row testi-comment">
+                            <div class="col-md-2">
+                                <img src="img/1.png" alt="..." class="img-circle" width="100">
+
+                            </div>
+
+                            <div class="col-md-8">
+                                <p class="f-16">I am delighted with the outcome! The invites are as we hoped they should be. My friends and relatives who received invites are showering praise for cards.  They have emailed me, called me or told me face to face how beautiful and brilliant the invites are. I think the best compliment from one of my friends is… he wrote 'This is simply the most elegant invite I have ever seen'. Incredible!</p>
+                                <h4 class="m-t-40 text-uc text-center">Ayaz khan</h4>
+
+                                <p class="text-center"><i>Dated: 02/09/2014</i></p>
+
+
+
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="item">
+                        <div class="row testi-comment">
+                            <div class="col-md-2">
+                                <img src="img/1.png" alt="..." class="img-circle" width="100">
+
+                            </div>
+
+                            <div class="col-md-8">
+                                <p class="f-16">Wow, great selection of cards….beautifully simple, elegant and modern!  Ideal for any occasion! Thanks a lot…</p>
+                                <h4 class="m-t-40 text-uc text-center">Kapil Shukla</h4>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="item">
+                        <div class="row testi-comment">
+                            <div class="col-md-2">
+                                <img src="img/1.png" alt="..." class="img-circle" width="100">
+
+                            </div>
+
+                            <div class="col-md-8">
+                                <p class="f-16">Superb print quality, exquisite paper with wonderful service from a wonderful professional team.</p>
+                                <h4 class="m-t-40 text-uc text-center">Sanjay Kumar </h4>
+
+                                <p class="text-center">Dated: 09/06/2013</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="item">
+                        <div class="row testi-comment">
+                            <div class="col-md-2">
+                                <img src="img/1.png" alt="..." class="img-circle" width="100">
+
+                            </div>
+
+                            <div class="col-md-8">
+
+                                <p class="f-16">You guys are totally awesome. No wedding should go ahead without Invite Affairs cards & stationery. You designed and printed for us exactly how we wanted them. Thank you all so much I am so happy with them and will be recommending you to all. Many thanks….</p>
+                                <h4 class="m-t-40 text-uc text-center">Miss Shilpi Kejriwal</h4>
+
+                                <p class="text-center"><i>United Kingdom ,Dated: 23/03/2014</i></p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="item">
+                        <div class="row testi-comment">
+                            <div class="col-md-2">
+                                <img src="img/1.png" alt="..." class="img-circle" width="100">
+
+                            </div>
+
+                            <div class="col-md-8">
+                                <p class="f-16">I was so impressed by the beautiful cards and they were delivered within deadline. Exceeded my expectations! Feeling blessed… Thank you so much</p>
+                                <h4 class="m-t-40 text-uc text-center">Ruby Mehra</h4>
+
+                                <p class="text-center">Dated: 20/06/2013</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="item">
+                        <div class="row testi-comment">
+                            <div class="col-md-2">
+                                <img src="img/1.png" alt="..." class="img-circle" width="100">
+
+                            </div>
+
+                            <div class="col-md-8">
+                                <p class="f-16">Thank you so much for the absolutely stunning wedding invitations. Perfectly designed, perfectly printed, perfectly written and off course ready for posting with gorgeous stationery. You have provided an excellent service, we will certainly recommend you to my friends and relatives</p>
+                                <h4 class="m-t-40 text-uc text-center">Krishna & Karishma</h4>
+
+                                <p class="text-center"><i>Dated: 21/05/2015</i></p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
 </div>
 
 
 
-<section id="Event-calendar">
+
+<!--event calendar section for desktop-->
+
+<section id="Event-calendar" class="hidden-xs">
     <div class="container">
-        <div class="row m-t-40">
-            <div class="col-md-12 text-center">
-                <h4 class="text-uc">Timeline of exhibition/fairs/seminars</h4>
-                <h4 class="text-uc">upcoming events</h4>
-                <h4>18th September, Sunday</h4>
-                <h4>The wedding fair, at The Radisson, Noida</h4>
+
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <img src="img/calendar.png" alt="" width="260">
 
             </div>
+
+            <div class="col-md-6">
+                <div class="row ">
+                    <div class="col-md-12">
+                        <h4 class="text-uc">Timeline of exhibition/fairs/seminars</h4>
+                        <h4 class="text-uc">upcoming events</h4>
+                        <h4>18th September, Sunday</h4>
+                        <h4 class="m-b-40">The wedding fair, at The Radisson, Noida</h4>
+
+                    </div>
+                </div>
+
+
+                <div class="row m-t-40">
+                    <div class="col-md-12 border-0">
+                        <h4 class="text-uc">Timeline of exhibition/fairs/seminars</h4>
+                        <h4 class="text-uc">upcoming events</h4>
+                        <h4>18th September, Sunday</h4>
+                        <h4>The wedding fair, at The Radisson, Noida</h4>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+</section>
+
+
+
+<!--event calendar section for Mobile-->
+
+
+
+<div id="section9" class="visible-xs">
+    <div class="mobile-bg ">
+        <img src="img/calendar-mobile.jpg" alt="" width="200">
+
+        <div class="mobile-bg-txt">
+            <p>TIMELINE OF EXHIBITIONS/ FAIRS/ SEMINARS</p>
+            <p> UPCOMING EVENTS</p>
+            <p>18th September, Sunday</p>
+            <p>The wedding fair, at The Radisson, Noida</p>
         </div>
 
         <hr>
 
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h4 class="text-uc">Timeline of exhibition/fairs/seminars</h4>
-                <h4 class="text-uc">upcoming events</h4>
-                <h4>18th September, Sunday</h4>
-                <h4>The wedding fair, at The Radisson, Noida</h4>
+        <div class="mobile-bg-txt">
 
-            </div>
+            <p>TIMELINE OF EXHIBITIONS/ FAIRS/ SEMINARS</p>
+            <p>UPCOMING EVENTS</p>
+            <p>18th September, Sunday</p>
+            <p>The wedding fair, at The Radisson, Noida</p>
+
         </div>
 
 
     </div>
-
-</section>
-
-
-<div class="black-strip">
-    <h1 class="m-5">Join us</h1>
 </div>
 
 
-<section id="join-us-section">
+
+<!--Join us section for desktop-->
+
+<section id="join-us-section" class="hidden-xs">
     <div class="join-us-bg">
         <div class="text-center">
-            <h3 class="black-c">Do you have what it takes to be part of the most idea driven team ?</h3>
-            <button class="job-btn m-t-20 wow hinge">Find Job Openings</button>
+            <div class="title text-uc">Join us</div>
+            <h3 class="w-100 text-muted">Do you have what it takes to be part of the most idea driven team ?</h3>
+            <button class="job-btn m-t-20">Find Job Openings</button>
         </div>
 
     </div>
 </section>
 
 
-<div class="black-strip ">
-    <h1 class="m-5">We Are Here</h1>
+
+
+<!--Join us section for Mobile-->
+
+
+<div id="section10" class="visible-xs">
+    <div class="mobile-bg ">
+        <h4>Do you have what it takes to be part of the most idea driven team ?</h4>
+
+        <h1>JOIN US</h1>
+        <button class="job-btn-mobile">Join Us</button>
+
+
+
+
+        <ul class="social-icon m-t-60">
+            <p>Follow us</p>
+
+            <li><a href=""><i class="fa fa-facebook-square fa-3x f"></i></a></li>
+            <li><a href=""><i class="fa fa-instagram fa-3x i"></i></a></li>
+            <li><a href=""><i class="fa fa-twitter-square fa-3x t"></i></a></li>
+            <li><a href=""><i class="fa fa-pinterest-square fa-3x p"></i></a></li>
+            <li><a href=""><i class="fa fa-youtube-play fa-3x y"></i></a></li>
+            <li><a href=""><i class="fa fa-linkedin-square fa-3x l"></i></a></li>
+
+        </ul>
+
+    </div>
 </div>
 
 
 
-<section id="contact-section">
+
+
+
+<!--Contact section Desktop-->
+
+<section id="contact-section" class="hidden-xs">
     <div class="container p-t-40">
         <div class="row">
-            <div class="col-md-6 ">
+            <div class="title black-c text-center" >We Are Here</div>
+            <hr class="m-5 m-b-20">
+            <div class="col-md-6">
                 <div class="address-phone pull-left">
-                    <p class="f-18 m-b-0">495, Sector A, Pocket B &amp; C</p>
-                    <p class="f-18">Vasant Kunj, New Delhi - 110070</p>
+                    <p class="f-16 m-b-0">495, Sector A, Pocket B &amp; C</p>
+                    <p class="f-16">Vasant Kunj, New Delhi - 110070</p>
 
-                    <p class="f-18 m-b-0 m-t-20">Phone : 011 - 4102 2508</p>
-                    <p class="f-18">Cell : +91 9871 777 335</p>
                 </div>
+            </div>
+
+        </div>
+
+
+        <div class="row ">
+            <div class="col-md-6">
+                <p class="f-20 m-b-0 m-t-20 brand-c">Call us</p>
+                <p class="f-16 m-b-0 m-t-0 brand-c">+91 9871 777 335</p>
+                <p class="f-16 brand-c">+91 11 41550783</p>
+
             </div>
 
 
             <div class="col-md-6 ">
                 <div class="email pull-right">
-                    <p class="f-18 m-b-0">E-mail : inviteaffairs@gmail.com</p>
-                    <p class="f-18 pull-right">info@inviteaffairs.com</p>
+                    <p class="m-t-20 brand-c f-20 text-right m-b-0">Mail us</p>
+                    <p class="f-18 pull-right m-b-0 brand-c">info@inviteaffairs.com</p>
+                    <p class="f-18 m-b-0 brand-c">inviteaffairs@gmail.com</p>
                 </div>
             </div>
 
@@ -697,10 +1376,96 @@
         </div>
 
 
-        <div class="container p-t-40 p-b-40">
+    </div>
+
+
+
+
+
+
+
+    <div class="container p-t-40">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="m-t-0 brand-c">Say Hello!</h2>
+                <form action="">
+                    <div class="row m-t-20">
+                        <div class="col-md-4">
+                            <div class="f-input-group">
+                                <label class="float-label" for="name">Name</label>
+                                <input type="text" id="name" class="float-input" placeholder="First Name">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="f-input-group">
+                                <label class="float-label" for="mobile">Mobile</label>
+                                <input type="text"  id="mobile" class="float-input" placeholder="Mobile">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="f-input-group">
+                                <label class="float-label" for="Email">Email</label>
+                                <input type="text" id="email" class="float-input" placeholder="Email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="f-input-group">
+                                <label class="float-label text-left" for="Message">Message</label>
+                                <input type="text" id="Message"  class="float-input" placeholder="Message">
+                            </div>
+                            <button class="btn pull-right btn-transparent"><i class="fa fa-envelope-o"></i>&nbsp;Send Message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h4 class="text-center m-b-0">Follow us</h4>
+                <ul class="social-icon">
+                    <li><a href=""><i class="fa fa-facebook-square fa-3x f"></i></a></li>
+                    <li><a href=""><i class="fa fa-instagram fa-3x i"></i></a></li>
+                    <li><a href=""><i class="fa fa-twitter-square fa-3x t"></i></a></li>
+                    <li><a href=""><i class="fa fa-pinterest-square fa-3x p"></i></a></li>
+                    <li><a href=""><i class="fa fa-youtube-play fa-3x y"></i></a></li>
+                    <li><a href=""><i class="fa fa-linkedin-square fa-3x l"></i></a></li>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+<!--Contact section for mobile --->
+
+<div id="section11" class="visible-xs">
+    <div class="mobile-bg ">
+
+        <h2 class="m-t-0 brand-c">We Are Here</h2>
+
+        <div class="mobile-bg-txt">
+            <p>495, Sector A, Pocket B & C Vasant Kunj, New Delhi - 110070 </p>
+            <p> Call us : +91 9871 777 335 | +91 11 41550783</p>
+            <p>Mail us : info@inviteaffairs.com | inviteaffairs@gmail.com</p>
+        </div>
+
+
+
+
+        <div class="container p-t-40">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="m-t-0">Say Hello!</h2>
+                    <h2 class="m-t-0 brand-c">Say Hello!</h2>
                     <form action="">
                         <div class="row m-t-20">
                             <div class="col-md-4">
@@ -728,7 +1493,7 @@
                                     <label class="float-label text-left" for="Message">Message</label>
                                     <input type="text" id="Message"  class="float-input" placeholder="Message">
                                 </div>
-                                <button class="btn btn-success pull-right"><i class="fa fa-envelope-o"></i>&nbsp;Send Message</button>
+                                <button class="btn pull-right btn-transparent"><i class="fa fa-envelope-o"></i>&nbsp;Send Message</button>
                             </div>
                         </div>
                     </form>
@@ -737,93 +1502,156 @@
 
             <div class="row">
                 <div class="col-md-12 text-center">
+                    <h4 class="text-center m-b-0">Follow us</h4>
                     <ul class="social-icon">
-                        <li><a href=""><i class="fa fa-facebook-square fa-2x"></i></a></li>
-                        <li><a href=""><i class="fa fa-twitter-square fa-2x"></i></a></li>
-                        <li><a href=""><i class="fa fa-linkedin-square fa-2x"></i></a></li>
-                        <li><a href=""><i class="fa fa-instagram fa-2x"></i></a></li>
-                        <li><a href=""><i class="fa fa-rss-square fa-2x"></i></a></li>
-                        <li><a href=""><i class="fa fa-google-plus-square fa-2x"></i></a></li>
+                        <li><a href=""><i class="fa fa-facebook-square fa-3x f"></i></a></li>
+                        <li><a href=""><i class="fa fa-instagram fa-3x i"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter-square fa-3x t"></i></a></li>
+                        <li><a href=""><i class="fa fa-pinterest-square fa-3x p"></i></a></li>
+                        <li><a href=""><i class="fa fa-youtube-play fa-3x y"></i></a></li>
+                        <li><a href=""><i class="fa fa-linkedin-square fa-3x l"></i></a></li>
+
                     </ul>
                 </div>
             </div>
 
         </div>
+
+
+
     </div>
-</section>
+</div>
+
+
 
 
 
 <section id="map-section">
 
+    <iframe id="map_canvas1" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14023.61439073276!2d77.169975!3d28.512548!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x46c6263621809a82!2sSage+Designs+Pvt+Ltd.!5e0!3m2!1sen!2sin!4v1469088766681" width="100%" height="450" frameborder="0" allowfullscreen></iframe>
 
-  <iframe style="-webkit-filter: grayscale(100%);
-filter: grayscale(100%);" id="map_canvas1" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14023.61439073276!2d77.169975!3d28.512548!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x46c6263621809a82!2sSage+Designs+Pvt+Ltd.!5e0!3m2!1sen!2sin!4v1469088766681" width="100%" height="450" frameborder="0" allowfullscreen></iframe>
 </section>
 
 
-<section id="footer-section">
+<section id="footer-section" class="hidden-xs">
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-3 text-center footer-logo-bg">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div>
-                            <img src="img/invite-affairs-logo.png" alt="" width="250" class="m-b-20">
-                        </div>
-                    </div>
+        <div class="row m-b-40">
+            <div class="col-md-4 text-center footer-logo-bg">
+
+                <div>
+                    <img src="img/invite-affairs-logo.png" alt="" width="350" class="m-b-20">
                 </div>
+
             </div>
 
 
-            <div class="col-md-9 other-half-footer">
-                <div class="row">
-                    <div class="col-md-4 ">
-                        <h3 class="m-b-0 m-t-0">Subscribe</h3>
-                        <p>Our newsletter</p>
-                        <input type="text" placeholder="Your Email please" class="input-filed">
-                        <a href="" class="input-btn"><i class="fa fa-arrow-right"></i></a>
-                    </div>
 
-
-                    <div class="col-md-4">
-                        <h3 class="m-t-0">Explore</h3>
-                        <ul class="footer-links">
-                            <li><a href="#image-section">Home</a></li>
-                            <li><a href="#about-section">About us</a></li>
-                            <li><a href="#services">Work</a></li>
-                            <li><a href="#team-section">Team</a></li>
-                            <li><a href="#join-us-section">Careers</a></li>
-                            <li><a href="#contact-section">Contact</a></li>
-
-                        </ul>
-
-                    </div>
+            <div class="col-md-4 ">
+                <h4 class="m-b-0 m-t-0 text-muted">Subscribe Our newsletter</h4>
+                <input type="text" placeholder="Your Email please" class="input-filed">
+                <a href="" class="input-btn"><i class="fa fa-arrow-right"></i></a>
+            </div>
 
 
 
-                    <div class="col-md-4">
-                        <div class="copyright">
-                            <p class="f-15">Created by Saga Designs Pvt. Ltd.</p>
-                            <p class="f-15">&copy; 2016 invite affairs. All Right Reserved</p>
-                        </div>
 
-                        <ul class="social-icon">
-                            <li><a href=""><i class="fa fa-facebook-square fa-2x"></i></a></li>
-                            <li><a href=""><i class="fa fa-twitter-square fa-2x"></i></a></li>
-                            <li><a href=""><i class="fa fa-linkedin-square fa-2x"></i></a></li>
-                            <li><a href=""><i class="fa fa-instagram fa-2x"></i></a></li>
-                            <li><a href=""><i class="fa fa-rss-square fa-2x"></i></a></li>
-                            <li><a href=""><i class="fa fa-google-plus-square fa-2x"></i></a></li>
-                        </ul>
-                    </div>
+
+            <div class="col-md-4">
+                <div class="copyright">
+                    <h3 class="m-5">Follow Us</h3>
+                    <ul class="social-icon m-t-5">
+                        <li><a href=""><i class="fa fa-facebook-square fa-3x f"></i></a></li>
+                        <li><a href=""><i class="fa fa-instagram fa-3x i"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter-square fa-3x t"></i></a></li>
+                        <li><a href=""><i class="fa fa-pinterest-square fa-3x p"></i></a></li>
+                        <li><a href=""><i class="fa fa-youtube-play fa-3x y"></i></a></li>
+                        <li><a href=""><i class="fa fa-linkedin-square fa-3x l"></i></a></li>
+                    </ul>
+                    <p class="f-15">Created by Sage Designs Pvt. Ltd.</p>
+                    <p class="f-15">&copy; 2016 invite affairs. All Right Reserved</p>
                 </div>
+
+
+            </div>
+
+
+        </div>
+
+
+        <!--Copyright section-->
+        <div class="copyright-section">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="text-muted f-15"><a href="#platform-section">Platform </a> | <a href="#about-section">Progress</a> | <a href="#services">Products</a> | <a href="#work-section-sort">Portfolio</a>  |  <a
+                            href="#team-section">People</a>  |  <a href="#process">Process</a>  |  <a href="#testi-section">Praise</a>  |  <a href="">Posting</a>|
+                        <a href="#contact-section">Place</a></p>
+                </div>
+            </div>
+
+        </div>
+        <!--ends here-->
+
+    </div>
+</section>
+
+
+
+<!--Footer Section for mobile-->
+
+
+<div id="section12" class="visible-xs">
+    <div class="mobile-bg">
+        <div class="mobile-bg-txt">
+
+            <div class="col-xs-12 text-center footer-logo-bg">
+
+                <div>
+                    <img src="img/invite-affairs-logo.png" alt="" width="350" class="m-b-20">
+                </div>
+
+            </div>
+
+
+
+            <div class="col-xs-12 m-t-20">
+                <h4 class="m-b-0 m-t-0 text-muted">Subscribe Our newsletter</h4>
+                <input type="text" placeholder="Your Email please" class="input-filed border">
+                <a href="" class="input-btn"><i class="fa fa-arrow-right"></i></a>
+            </div>
+
+
+
+
+
+            <div class="col-xs-12 m-t-20">
+                <div class="copyright">
+                    <h3 class="m-5">Follow Us</h3>
+                    <ul class="social-icon m-t-5">
+                        <li><a href=""><i class="fa fa-facebook-square fa-3x f"></i></a></li>
+                        <li><a href=""><i class="fa fa-instagram fa-3x i"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter-square fa-3x t"></i></a></li>
+                        <li><a href=""><i class="fa fa-pinterest-square fa-3x p"></i></a></li>
+                        <li><a href=""><i class="fa fa-youtube-play fa-3x y"></i></a></li>
+                        <li><a href=""><i class="fa fa-linkedin-square fa-3x l"></i></a></li>
+                    </ul>
+                    <p class="f-15">Created by Sage Designs Pvt. Ltd.</p>
+                    <p class="f-15">&copy; 2016 invite affairs. All Right Reserved</p>
+                </div>
+
 
             </div>
 
         </div>
+
+        </div>
     </div>
-</section>
+
+
+
+
+
+
+
 
 
 <a href="#0" class="cd-top">To Top</a>
@@ -831,10 +1659,13 @@ filter: grayscale(100%);" id="map_canvas1" src="https://www.google.com/maps/embe
 
 
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="bower_components/isotope/dist/isotope.pkgd.min.js"></script>
 <script src="bower_components/wow/dist/wow.min.js"></script>
 <script src="bower_components/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+
 <script src="js/main.js"></script>
+
+
 
 
 <script>
@@ -859,7 +1690,58 @@ filter: grayscale(100%);" id="map_canvas1" src="https://www.google.com/maps/embe
         });
     });
 
-    new WOW().init();
+    new WOW().init()
+
+
+
+
+    //Sort random function
+    function random(owlSelector){
+        owlSelector.children().sort(function(){
+            return Math.round(Math.random()) - 0.5;
+        }).each(function(){
+            $(this).appendTo(owlSelector);
+        });
+    }
+
+    $("#owl-demo").owlCarousel({
+        navigation: true,
+        navigationText: [
+            "<i class='fa fa-angle-left fa-2x' ></i>",
+            "<i class='fa fa-angle-right fa-2x'></i>"
+        ],
+        beforeInit : function(elem){
+            //Parameter elem pointing to $("#owl-demo")
+            random(elem);
+        }
+
+    });
+
+
+    $("#owl-demo1").owlCarousel({
+        navigation: true,
+        navigationText: [
+            "<i class='fa fa-angle-left fa-2x' ></i>",
+            "<i class='fa fa-angle-right fa-2x'></i>"
+        ],
+        beforeInit : function(elem){
+            //Parameter elem pointing to $("#owl-demo")
+            random(elem);
+        }
+
+    });
+
+
+    $('.wow').removeClass('wow');
+
+
+
+    $('.navbar-nav').find('a').on('click', function(e){
+        $('.navbar-toggle').trigger('click');
+    });
+
+
+
 </script>
 
 

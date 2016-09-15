@@ -28,7 +28,8 @@ html{
 
 
 html ,body{
-    height: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
 
 
@@ -629,8 +630,9 @@ nav ul{
     width: 100%;
     height: 380px;
     background-attachment: fixed;
-    background-size: cover;
-    background-position: 50% 50%;
+    background-size: inherit;
+    background-position-x: 100%;
+    background-position-y: 100%;
     display: -webkit-flex;
     -webkit-justify-content: center;
     -moz-justify-content: center;
@@ -641,6 +643,7 @@ nav ul{
     background-origin: inherit;
     image-rendering: auto;
     image-rendering: crisp-edges;
+    box-sizing: border-box;
 }
 
 
@@ -840,7 +843,7 @@ nav ul{
 
 
 #work-section-sort p{
-    padding: 0 250px;
+    padding: 0 25%;
 
 }
 
@@ -1868,7 +1871,7 @@ img::before{
 
     #section6 .mobile-bg{
         background-color: #d8e5ef;
-        height: 900px;
+        height: 700px;
         background-size: cover;
         width: 100%;
         text-align: center;
@@ -1885,6 +1888,15 @@ img::before{
         padding: 10px;
         font-size: 16px!important;
 
+    }
+
+
+    #section6 .mobile-bg .team-member > figcaption{
+        transform: rotate(-30deg);
+        margin-top: -20px!important;
+        right: -60px;
+        position: relative;
+        font-size: 15px!important;
     }
 
 
@@ -1990,8 +2002,8 @@ img::before{
         width: 100%;
         text-align: center;
         padding-top: 40px;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 4%;
+        padding-right: 4%;
 
     }
 
@@ -2049,3 +2061,33 @@ img::before{
 
 
 }
+
+
+@media screen and  (max-width: 1200px) and (min-width: 768px)  {
+    .custom-nav ul li a, .custom-nav ul li p{
+        line-height: 31px!important;
+        font-size: 12px!important;
+    }
+
+    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+        color: #901518 !important;
+        font-size: 12px !important;
+        background: beige;
+    }
+
+    .nav>li>a {
+        padding: 10px 10px!important;
+    }
+
+    .h-logo {
+        width: 140px;
+    }
+}
+
+
+
+
+
+
+
+

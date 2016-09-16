@@ -1871,7 +1871,7 @@ img::before{
 
     #section6 .mobile-bg{
         background-color: #d8e5ef;
-        height: 700px;
+        height: 800px;
         background-size: cover;
         width: 100%;
         text-align: center;
@@ -1924,6 +1924,14 @@ img::before{
         word-spacing: 3px;
         line-height: 1.6em;
         text-align: justify;
+    }
+
+    #section7 .mobile-bg .count {
+        font-size: 25px;
+    }
+
+    #section7 .mobile-bg .count p{
+        font-size: 10px;
     }
 
 
@@ -2040,8 +2048,8 @@ img::before{
         width: 100%;
         text-align: center;
         padding-top: 40px;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
 
     }
 
@@ -2062,8 +2070,14 @@ img::before{
 
 
     #section12 .mobile-bg-txt {
-        padding: 40px 30px;
+        padding: 40px 0;
     }
+
+
+
+
+
+
 
 
 

@@ -1736,7 +1736,7 @@ img::before{
 /*///////////////////////////////////////////////////////////////////////////////////////////////*/
 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 768px){
 
     /*////////////Section One /////////////*/
 
@@ -1893,10 +1893,10 @@ img::before{
 
     #section6 .mobile-bg .team-member > figcaption{
         transform: rotate(-30deg);
-        margin-top: -20px!important;
-        right: -60px;
+        margin-top: 2px!important;
+        right: -19px;
         position: relative;
-        font-size: 15px!important;
+        font-size: 13px!important;
     }
 
 
@@ -2040,8 +2040,8 @@ img::before{
         width: 100%;
         text-align: center;
         padding-top: 40px;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
 
     }
 
@@ -2052,6 +2052,24 @@ img::before{
         font-size: 16px!important;
         margin-top: 40px;
 
+    }
+
+
+
+   #section12 .footer-logo-bg img{
+        width: 250px;
+    }
+
+
+    #section12 .mobile-bg-txt {
+        padding: 40px 30px;
+    }
+
+
+
+
+    .join-us-bg h3 {
+        padding: 10px;
     }
 
 

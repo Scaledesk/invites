@@ -144,3 +144,56 @@ $(window).scroll(function() {
 
 
 
+
+//Sort random function
+function random(owlSelector){
+    owlSelector.children().sort(function(){
+        return Math.round(Math.random()) - 0.5;
+    }).each(function(){
+        $(this).appendTo(owlSelector);
+    });
+}
+
+$("#owl-demo").owlCarousel({
+    navigation: true,
+    navigationText: [
+        "<i class='fa fa-angle-left fa-2x' ></i>",
+        "<i class='fa fa-angle-right fa-2x'></i>"
+    ],
+    beforeInit : function(elem){
+        //Parameter elem pointing to $("#owl-demo")
+        random(elem);
+    }
+
+});
+
+
+
+$("#owl-demo1").owlCarousel({
+    navigation: true,
+    navigationText: [
+        "<i class='fa fa-angle-left fa-2x' ></i>",
+        "<i class='fa fa-angle-right fa-2x'></i>"
+    ],
+    beforeInit : function(elem){
+        //Parameter elem pointing to $("#owl-demo")
+        random(elem);
+    }
+
+});
+
+
+
+
+
+
+
+
+
+
+$('.navbar-nav').find('a').on('click', function(e){
+    $('.navbar-toggle').trigger('click');
+});
+
+
+

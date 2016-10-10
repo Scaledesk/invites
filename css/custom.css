@@ -1748,8 +1748,8 @@ img::before{
 
     #section1 .mobile-bg{
         background: url('../img/howm%20pg-1.jpg') center center  no-repeat;
-        height: 600px;
-        background-size: cover;
+        height: 90vh;
+        background-size: contain;
         width: 100%;
         text-align: left;
     }

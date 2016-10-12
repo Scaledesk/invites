@@ -741,6 +741,8 @@ nav ul{
     image-rendering: crisp-edges;
 }
 
+
+
 #Event-calendar .container{
     padding: 100px;
 }
@@ -927,15 +929,20 @@ nav ul{
     transform: scale(1.1);
     transition: all .3s ease-out;
     cursor: pointer;
-
 }
+
+.team-member-lead :hover{
+    transform: scale(1.4);
+    transition: all .3s ease-out;
+    cursor: pointer;
+}
+
+
 
 
 .team-member:hover img{
     border: 3px solid  rgba(153, 153, 153, 0.41);
     transition: all .3s ease-out;
-
-
 }
 
 
@@ -1027,6 +1034,10 @@ nav ul{
         text-align: right;
     }
 
+    .owl-item{
+        width: 100%!important;
+    }
+
 }
 
 
@@ -1081,9 +1092,9 @@ nav ul{
 
 
 
-.owl-item{
-    width: 260px!important;
-}
+/*.owl-item{*/
+    /*width: 260px!important;*/
+/*}*/
 
 
 /*//////////////////////////////////////////Owl ends here////////////////////////////////////////*/
@@ -2127,5 +2138,19 @@ img::before{
 
 
 
+@media screen and (min-width: 768px)  {
 
+    /*.owl-wrapper{*/
+        /*width: 100%!important;*/
+    /*}*/
+
+    .owl-wrapper-outer .owl-wrapper > .owl-item{
+        /*width: 100%!important;*/
+    }
+
+    .owl-item{
+        width: 260px!important;
+    }
+
+}
 

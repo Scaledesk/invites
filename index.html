@@ -1859,24 +1859,26 @@
         <div class="row">
             <div class="col-md-12">
                 <h2 class="m-t-0 brand-c">Say Hello!</h2>
-                <form action="">
+                
+
+                <form action="PHPMailer/MailFunction.php" method="post">
                     <div class="row m-t-20">
                         <div class="col-md-4">
                             <div class="f-input-group">
                                 <label class="float-label" for="name">Name</label>
-                                <input type="text" id="name" class="float-input" placeholder="First Name">
+                                <input type="text" id="name" name="name" class="float-input" placeholder="First Name">
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="f-input-group">
                                 <label class="float-label" for="mobile">Mobile</label>
-                                <input type="text"  id="mobile" class="float-input" placeholder="Mobile">
+                                <input type="text"  id="mobile" name="mobile" class="float-input" placeholder="Mobile">
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="f-input-group">
                                 <label class="float-label" for="Email">Email</label>
-                                <input type="text" id="email" class="float-input" placeholder="Email">
+                                <input type="text" id="email" name="email" class="float-input" placeholder="Email">
                             </div>
                         </div>
                     </div>
@@ -1884,12 +1886,15 @@
                         <div class="col-xs-12">
                             <div class="f-input-group">
                                 <label class="float-label text-left" for="Message">Message</label>
-                                <input type="text" id="Message"  class="float-input" placeholder="Message">
+                                <input type="text" id="Message" name="message" class="float-input" placeholder="Message">
                             </div>
                             <button class="btn pull-right btn-transparent"><i class="fa fa-envelope-o"></i>&nbsp;Send Message</button>
                         </div>
                     </div>
                 </form>
+
+
+
             </div>
         </div>
 
@@ -2193,6 +2198,16 @@
     });
 
 
+
+/*function submitForm(){
+    $.ajax({
+        url: "PHPMailer/MailFunction.php",
+        method:"POST",
+        data:form.serialize();
+    }).done(function() {
+        $( this ).addClass( "done" );
+    });
+}*/
 
 
 

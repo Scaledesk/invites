@@ -43,6 +43,6 @@ $mail->Body    = '<p>Name: '.$_POST['name'].'</p><p>Email: '.$email.'</p><p>Numb
 if(!$mail->send()) {
     echo 'error';
 } else {
-	echo 'success';
+	header('Location: ../thankyou.html');
 }
 

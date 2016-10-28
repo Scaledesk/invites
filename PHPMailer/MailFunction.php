@@ -36,6 +36,7 @@ $mail1->send();
 
 $mail->setFrom('info@inviteaffairs.com', 'Contact Form');
 $mail->addAddress('aditya@inviteaffairs.com');
+$mail->addAddress('inviteaffairs@gmail.com');
 // $mail->addAddress('javed@scaledesk.com');               
 $mail->isHTML(true);            
 
